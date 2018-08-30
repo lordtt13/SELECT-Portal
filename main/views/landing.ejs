@@ -1,0 +1,16 @@
+<% include ./partials/header.ejs %>
+
+<%    start.forEach(function(start){ %>
+   <div style="text-align:center">
+    
+    <div class="thumbnail">
+        <img style="margin-top: 7.0em" src="<%= start.image %>">
+    </div>
+    <div class="caption">
+        <font size="15"><%= start.usecase %></font>
+    </div>
+    
+   </div> 
+<% }); %> 
+
+<% include ./partials/footer.ejs %>
