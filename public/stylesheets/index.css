@@ -3,7 +3,7 @@
 }
 body{
     margin: 0;
-    padding-top:100px
+    padding-top:0;
 
 }
 .logo #vitLogo{
@@ -38,7 +38,7 @@ body{
     text-transform: uppercase;
     cursor: default;
 }
-.navbar{
+.navbarC{
     padding:0px 0px 3px 0px;
 }
 
@@ -98,14 +98,67 @@ body{
     color:#3b5997;
 
 }
-.page-header{
+.page-header1{
+    width: 100%;
+}
+.page-header-scrolled {
     position: fixed;
-    top:0;
-    right:0;
-    left:0;
+    top: 0;
     z-index: 1;
+    width: 100%;
 }
 
+.department-heading{
+    
+    background: #3b5997;
+    margin:0px;
+    padding:7px 5px;
+    font: 1.2em Helvetica;
+    font-weight: 700;
+    color:white;
+    width: 100%;
+    border: 0px;
+}
+.departmentContainer{
+    
+    border: 3px solid #3b5997;
+    border-radius: 3px;
+    padding: 0;
+}
+.horizontal-bar, .vertical-bar{
+    width:15px;
+    height:3px;
+    background: white
+}
+.vertical-bar{
+    position: relative;
+    transform: rotate(90deg) translateX(-2px);
+}
+.plus-icon{
+    float: right; margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.plus-icon-change .vertical-bar{
+    opacity: 0;
+}
+.departmentContainer{
+    margin: 0px 0px 20px 0px;
+}
+.
+
+.teachers-cards{
+    border: 3px solid #e5e5e5;
+    border-radius: 4px;
+    margin: 7px;
+    text-align: center
+    
+}
+.teacherImg img{
+    width: 150px;
+    height:200px;
+    margin-top: 10px;
+}
 
 
 @media screen and (min-width:1024px)
