@@ -1,26 +1,28 @@
 <% include ./partials/header.ejs %>
-
+<script type  ="text/javascript" src = "http://localhost:63342/scripts/faculty.js"></script>
 <div class="container">
+    
+    
     <div id="deee" class="departmentContainer">
 <div id="deeerow" class="department-heading" >
     <div class="departmentName"><b>Department of Electrical Engineering</b>
-    <div class="plus-icon plus-icon-change"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
+    <div class="plus-icon "><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
      
     </div>
 </div><div class="teachersCards" id="eeeCards">
     
-        <div class="row">
+        <div class="row cardsFlex">
             <% electrical.forEach(function(teacher){ %>
         
             
-            <div class="col-md-4">
-                <div class="thumbnail">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="teachers-cards">
                     <div class="teacherImg"><img src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg" alt="<%-teacher.empid%>.jpg"></div>
-                    <div class="caption"><%=teacher.name%></div>
-                    <div class="caption"><%=teacher.deg%></div>
-                    <div class="caption"><%=teacher.mob%></div>
-                    <div class="caption"><%=teacher.email%></div>
-                    <div class="caption"><%=teacher.cabin%></div>
+                    <div class="teacherName"><%=teacher.name%></div>
+                    <div class="teacherDeg"><%=teacher.deg%></div>
+                    <div class="teacherMobile"><%=teacher.mob%></div>
+                    <div class="teacherEmail"><%=teacher.email%></div>
+                    <div class="teacherCabin"><%=teacher.cabin%></div>
             </div></div>
             <% }); %>
         
@@ -29,28 +31,29 @@
         
     </div>
         </div></div>
+    
     <div id="deie" class="departmentContainer">
 <div id="deierow" class="department-heading" >
     <div class="departmentName"><b>Department of Instrumentation</b>
-    <div class="plus-icon plus-icon-change"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
+    <div class="plus-icon"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
      
     </div>
 </div>
         <div class="teachersCards" id="eieCards">
     
-        <div class="row">
+        <div class="row  cardsFlex">
             <% instruments.forEach(function(teacher){ %>
-
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <div class="teacherImg"><img src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg" alt="<%-teacher.empid%>.jpg"></div>
-                    <div class="caption"><%=teacher.name%></div>
-                    <div class="caption"><%=teacher.deg%></div>
-                    <div class="caption"><%=teacher.mob%></div>
-                    <div class="caption"><%=teacher.email%></div>
-                    <div class="caption"><%=teacher.cabin%></div>
-                </div></div>
+        
+            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="teachers-cards">
+                    <div class="teacherImg"><img  src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg"  alt="<%-teacher.empid+".jpg" %>"></div>
+                    <div class="teacherName"><%=teacher.name%></div>
+                    <div class="teacherDeg"><%=teacher.deg%></div>
+                    <div class="teacherMobile"><%=teacher.mob%></div>
+                    <div class="teacherEmail"><%=teacher.email%></div>
+                    <div class="teacherCabin"><%=teacher.cabin%></div>
+            </div></div>
             <% }); %>
         
         
@@ -58,27 +61,28 @@
         </div>
             </div>
 </div>
+    
     <div id="depe" class="departmentContainer">
-<div id="deeerow" class="department-heading" >
+<div id="deperow" class="department-heading" >
     <div class="departmentName"><b>Department of Energy and Power Electronics</b>
-    <div class="plus-icon plus-icon-change"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
+    <div class="plus-icon "><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
      
     </div>
 </div><div class="teachersCards" id="epeCards">
     
-        <div class="row">
+        <div class="row cardsFlex">
             <% pedrive.forEach(function(teacher){ %>
-
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <div class="teacherImg"><img src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg" alt="<%-teacher.empid%>.jpg"></div>
-                    <div class="caption"><%=teacher.name%></div>
-                    <div class="caption"><%=teacher.deg%></div>
-                    <div class="caption"><%=teacher.mob%></div>
-                    <div class="caption"><%=teacher.email%></div>
-                    <div class="caption"><%=teacher.cabin%></div>
-                </div></div>
+        
+            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="teachers-cards">
+                    <div class="teacherImg"><img  src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg"  alt="<%-teacher.empid+".jpg" %>"></div>
+                    <div class="teacherName"><%=teacher.name%></div>
+                    <div class="teacherDeg"><%=teacher.deg%></div>
+                    <div class="teacherMobile"><%=teacher.mob%></div>
+                    <div class="teacherEmail"><%=teacher.email%></div>
+                    <div class="teacherCabin"><%=teacher.cabin%></div>
+            </div></div>
             <% }); %>
         
         
@@ -86,28 +90,29 @@
         </div>
     </div>
 </div>
+    
     <div id="dcae" class="departmentContainer">
 <div id="dcaerow" class="department-heading" >
     <div class="departmentName"><b>Department of Control and Automation</b>
-    <div class="plus-icon plus-icon-change"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
+    <div class="plus-icon"><div class="horizontal-bar"></div><div class="vertical-bar"></div></div>
      
     </div>
 </div>
         <div class="teachersCards" id="caeCards">
     
-        <div class="row">
+        <div class="row  cardsFlex">
             <% controlauto.forEach(function(teacher){ %>
-
-
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <div class="teacherImg"><img src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg" alt="<%-teacher.empid%>.jpg"></div>
-                    <div class="caption"><%=teacher.name%></div>
-                    <div class="caption"><%=teacher.deg%></div>
-                    <div class="caption"><%=teacher.mob%></div>
-                    <div class="caption"><%=teacher.email%></div>
-                    <div class="caption"><%=teacher.cabin%></div>
-                </div></div>
+        
+            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="teachers-cards">
+                    <div class="teacherImg"><img  src="http://vit.ac.in/img/faculty/<%=teacher.empid%>.jpg"  alt="<%-teacher.empid+".jpg" %>"></div>
+                    <div class="teacherName"><%=teacher.name%></div>
+                    <div class="teacherDeg"><%=teacher.deg%></div>
+                    <div class="teacherMobile"><%=teacher.mob%></div>
+                    <div class="teacherEmail"><%=teacher.email%></div>
+                    <div class="teacherCabin"><%=teacher.cabin%></div>
+            </div></div>
             <% }); %>
         
         
@@ -115,5 +120,7 @@
         </div>
     </div>
         </div>
+    
+    
 </div>
 <% include ./partials/footer.ejs %>
