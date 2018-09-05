@@ -1,104 +1,104 @@
-empid,name,dept,deg,mob,email,cabin
-10020,Jayabarathi  T,Electrical Engineering,Sr. Professor,9488276543,tjayabarathi@vit.ac.in,TT 241
-12216,Vijayakumar D,Electrical Engineering,Professor,9952068961,vijayakumar.d@vit.ac.in,TT 433 (Lab)
-14845,Jacob Raglend,Electrical Engineering,Professor,9965853338,jacobraglend@vit.ac.in ,TT 533
-10248,P. Vijaya Priya,Electrical Engineering,Asso. Prof.,9952392065,pvijayapriya@vit.ac.in,ALM304
-12490,Meikandasivam S,Electrical Engineering,Asso. Prof.,9791396835,meikandasivam.s@vit.ac.in,TT 520
-10481,Sathishkumar  K,Electrical Engineering,Asso. Prof.,9443623508,ksathishkumar@vit.ac.in,TT 247(Lab)
-11815,Ravi  K,Electrical Engineering,Asso. Prof.,9486940357,k.ravi@vit.ac.in,TT 133A
-10510,Prabhakar Karthikeyan  S,Electrical Engineering,Asso. Prof.,9894610689,sprabhakarkarthikeyan@vit.ac.in,TT AX 102 D
-11562,Saravanan  B,Electrical Engineering,Asso. Prof.,9659954979,bsaravanan@vit.ac.in,TT 344(Lab)
-11472,Belwin Edward  J,Electrical Engineering,Asso. Prof.,9994911487,jbelwinedward@vit.ac.in,TT 532E
-10304,Rani  C,Electrical Engineering,Asso. Prof.,9626188555,crani@vit.ac.in,TT 131 
-12485,Thirumalaivasan R,Electrical Engineering,Asso. Prof.,9444224855,thirumalai.r@vit.ac.in,TT 344(Lab)
-12486,Janaki M,Electrical Engineering,Asso. Prof.,9444226403,janaki.m@vit.ac.in,TT 319 A
-11074,Mageshvaran  R,Electrical Engineering,Asso. Prof.,9940859856,mageshvaranr@vit.ac.in,TT 034
-14762,S Venkatesh,Electrical Engineering,Asso. Prof.,9003720156,venkatesh.srinivasan@vit.ac.in ,TT 037 (Lab)
-10899,Rama Prabha D,Electrical Engineering,Asso. Prof.,9443099590,dramaprabha@vit.ac.in,TT 031
-10162,Anbarasan P,Electrical Engineering,Asst. Prof. (SG.),9443371755,panbarasan@vit.ac.in,TT 319
-12959,Gokula Krishnan G,Electrical Engineering,Asst. Prof.(Sr),9865307698,gokul.g@vit.ac.in,TT Anx 202 H
-11930,Vanishree J,Electrical Engineering,Asst. Prof.(Sr),7708464426,j.vanishree@vit.ac.in,TT Anx 102E
-13406,Thamilmaran A,Electrical Engineering,Asst. Prof.(Sr),9345588224,thamilmaran.a@vit.ac.in,SJT 525
-12213,Sri Hari Mandava,Electrical Engineering,Asst. Prof.(Sr),9751296300,mandavasrihari@vit.ac.in,TT 035
-15433,Kavitha V,Electrical Engineering,Asst. Prof.(Jr),9944507148,kavitha.v@vit.ac.in,TT 44
-15554,Mekalathur B Hemanth Kumar,Electrical Engineering,Asst. Prof.(Jr),8125332276,hemanthkumar.b@vit.ac.in,TT344
-15555,Challa Babu,Electrical Engineering,Asst. Prof.(Jr),8332947890,challa.babu@vit.ac.in,TT 515
-15556,Nageswara Rao A,Electrical Engineering,Asst. Prof.(Jr),7036888836,nageswararao.a@vit.ac.in,TT 44
-15557,Pydikalva Padmavathi,Electrical Engineering,Asst. Prof.(Jr),8248197677,padmavathi.p@vit.ac.in,TT 344
-15558,Rahul S G,Electrical Engineering,Asst. Prof.(Jr),9597632595,rahul.sg@vit.ac.in,TT 514
-15559,Jyotheeswara Reddy Kalvakurthi,Electrical Engineering,Asst. Prof.(Jr),9441097835,jyotheeswara.reddy@vit.ac.in,TT 520
-15560,Damodhar Reddy,Electrical Engineering,Asst. Prof.(Jr),9885294533,damodhar.reddy@vit.ac.in,TT 401
-15561,Ravi Dharavath,Electrical Engineering,Asst. Prof.(Jr),9848349070,ravi.dharavath@vit.ac.in,TT 344
-15562,Kola Muralikumar,Electrical Engineering,Asst. Prof.(Jr),9676627447,kola.muralikumar@vit.ac.in,TT 235
-15563,Senthil Prabu R,Electrical Engineering,Asst. Prof.(Jr),9487007524,senthilprabu.r@vit.ac.in,TT 44
-15564,Kanike Vinod Kumar,Electrical Engineering,Asst. Prof.(Jr),9491406706,kanikevinodkumar@vit.ac.in,TT 202
-15565,Monica.P,Electrical Engineering,Asst. Prof.(Jr),8297721022,monica.p@vit.ac.in,TT 433
-15566,Dhivyasri G,Electrical Engineering,Asst. Prof.(Jr),9486791900,dhivyasri.g@vit.ac.in,TT 514
-15567,Dhanup S Pillai,Electrical Engineering,Asst. Prof.(Jr),7530000713,dhanuppillai.s@vit.ac.in,TT 235
-15568,Saranya S,Electrical Engineering,Asst. Prof.(Jr),9944927730,s.saranya@vit.ac.in,TT 045
-15569,Kishore Kumar B,Electrical Engineering,Asst. Prof.(Jr),7981944234,kishorekumar.b@vit.ac.in,TT 247
-15570,Peter K Joseph,Electrical Engineering,Asst. Prof.(Jr),9947618810,peterk.joseph@vit.ac.in,TT 044
-15571,Puppala Rajendhar,Electrical Engineering,Asst. Prof.(Jr),9492027713,puppala.rajendhar@vit.ac.in,TT 202
-15572,Kartheek Vankadara,Electrical Engineering,Asst. Prof.(Jr),9703276995,kartheek.vankadara@vit.ac.in,TT 433
-15573,Venkateswari R,Electrical Engineering,Asst. Prof.(Jr),8220439963,venkateswari.r@vit.ac.in,TT 037
-15574,Neelamsetti Kirn Kumar,Electrical Engineering,Asst. Prof.(Jr),9866366939,kirnkumar.n@vit.ac.in,TT 202
-15575,Srisailam Sreedhar,Electrical Engineering,Asst. Prof.(Jr),7204891557,srisailam.sreedhar@vit.ac.in,SJT 520
-15736,Venkateswarlu S,Electrical Engineering,Asst. Prof.(Jr),8500737037,venkateswarlu.s@vit.ac.in,TT 344
-15737,Kola Sampangi Sambai,Electrical Engineering,Asst. Prof.(Jr),9491603916,sampangi.sambaiah@vit.ac.in,TT 202
-10680,Arulmozhivarman P,Instrumentation,Professor& Dean,9443311373,parulmozhivarman@vit.ac.in,TT 510
-11308,Partha Sharathi Mallick,Instrumentation,Sr. Professor,9566656769,psmallick@vit.ac.in,MB134
-10387,Sivabalan S,Instrumentation,Professor,9894681056,ssivabalan@vit.ac.in,TT 139
-10116,Mahalakshmi  P,Instrumentation,Asso. Prof.,9952390076,pmahalakshmi@vit.ac.in,TT 131
-13957,Arungalai Vendan S,Instrumentation,Asso. Prof.,9994748264,arungalaivendan@vit.ac.in,TT 034 E
-12215,Sudha  R,Instrumentation,Asso. Prof.,9578409526,sudha.r@vit.ac.in,TT 534A
-11341,Amutha Prabha N,Instrumentation,Asso. Prof.,9486750593,amuthaprabha@vit.ac.in,TT 515(Lab)
-11051,Vivekanandan  S,Instrumentation,Asso. Prof.,8124274447,svivekanandan@vit.ac.in,TT520
-12973,Rajini G K,Instrumentation,Asso. Prof.,9790107509,rajini.gk@vit.ac.in,TT 514
-10368,Balaji  S,Instrumentation,Asso. Prof.,9443436702,sbalaji@vit.ac.in,TT 031
-11355,Balamurugan  S,Instrumentation,Asso. Prof.,9994085352,sbalamurugan@vit.ac.in,TT 031
-10943,Venkataraman  M.N,Instrumentation,Asso. Prof.,9884520878,mnvenkataraman@vit.ac.in,TT 401(Lab)
-12415,Karthikeyan A,Instrumentation,Asst. Prof.(Sr),9884725721,karthikeyan.arun@vit.ac.in,TT Anx 202 D
-11359,Marimuthu  R,Instrumentation,Asst. Prof.(Sr),9976494888,rmarimuthu@vit.ac.in,TT 031
-10399,Santhakumar R,Instrumentation,Asst. Prof.(Sr),9894452792,santhakumar@vit.ac.in,TT 034
-12480,Vidhyasagar .G,Instrumentation,Asst. Prof.(Sr),9894540408,vidhyasagar.g@vit.ac.in,TT 128
-13570,Uma Sathyakam P,Instrumentation,Asst. Prof.(Sr),9962115704,umasathyakam.p@vit.ac.in,TT Anx 202A
-13181,Dr. Abhishek G,Instrumentation,Asst. Prof.,9003542499,abhishek.g@vit.ac.in,TT 534 D
-10171,Kowsalya  M,Energy and Power Electronics,Professor,7418077407,mkowsalya@vit.ac.in,TT 030
-12250,Rajasekar N,Energy and Power Electronics,Professor,9952362301,nrajasekar@vit.ac.in,TT 239
-15295,YP Obulesu,Energy and Power Electronics,Professor,9966747042,yp.obulesu@vit.ac.in,SJT 614 A
-11182,Palanisamy  K,Energy and Power Electronics,Asso. Prof.,9894718720,kpalanisamy@vit.ac.in,TT 532 E
-10433,Subramanian  K,Energy and Power Electronics,Asso. Prof.,9443687500,ksubramanian@vit.ac.in,TT 34A
-12232,Umashankar  S,Energy and Power Electronics,Asso. Prof.,9003260199,umashankar.s@vit.ac.in,TT 508
-13591,Sreejith S,Energy and Power Electronics,Asso. Prof.,9790636602,sreejith.s@vit.ac.in,TT 034
-11080,Sudhakar  N,Energy and Power Electronics,Asso. Prof.,9942002947,nsudhakar@vit.ac.in,TT 533D
-12957,Ponnambalam P,Energy and Power Electronics,Asso. Prof.,9894777845,ponnambalam.p@vit.ac.in,TT 533B
-13070,Elangovan D,Energy and Power Electronics,Asso. Prof.,9894207260,elangovan.devaraj@vit.ac.in,TT Anx204D
-14775,Mahendra V. Chilukuri,Energy and Power Electronics,Asso.Prof,8056007226,mahendra.chilukuri@vit.ac.in ,TT Anx 203 D
-14793,Indra Gandhi V,Energy and Power Electronics,Asso. Prof.,9750603539,indragandhi.v@vit.ac.in  ,TT 044 (Lab)
-11975,Chitra  A,Energy and Power Electronics,Asso. Prof.,9894760447,chitra.a@vit.ac.in,TT 034
-12943,Arun Kumar G,Energy and Power Electronics,Asso. Prof.,9994247789,g.arunkumar@vit.ac.in,TT Anx 104 C
-11558,Razia Sultana  W,Energy and Power Electronics,Asso. Prof.,9943295041,wraziasultana@vit.ac.in,TT 034
-15251,Brisilla R M,Energy and Power Electronics,Asso. Prof.,9965253098,brisilla.rm@vit.ac.in,TT Anx 104 F
-15301,Raja Singh R,Energy and Power Electronics,Asso. Prof.,8300754450,rrajasingh@vit.ac.in,TT 236
-10305,Raju  J,Energy and Power Electronics,Asst. Prof. (SG.),9994440614,jraju@vit.ac.in,TT 329C
-11201,Arun  N,Energy and Power Electronics,Asst. Prof. (SG.),9789231117,narun@vit.ac.in,TT Anx 102A
-11075,Sankardoss  V,Energy and Power Electronics,Asst. Prof.(Sr),9095174226,vsankardoss@vit.ac.in,TT 433 (Lab)
-12196,Mathew M Noel ,Control and Automation,Professor,9489343787,mathew.m@vit.ac.in,TT 338
-13318,Raghunathan T,Control and Automation,Professor,9489969616,raghunathan.t@vit.ac.in,TT 137
-10091,Ramesh  V,Control and Automation,Professor,9944730510,vramesh@vit.ac.in,TT 240
-10231,Saravanakumar  R,Control and Automation,Professor,9944507148,rsaravanakumar@vit.ac.in,TT 138
-10529,Geethanjali  P ,Control and Automation,Asso. Prof.,9944980194,pgeethanjali@vit.ac.in,TT 508
-12214,Prabhu K. R,Control and Automation,Asso. Prof.,9578409525,prabhu.kr@vit.ac.in,TT 532 D
-13943,Kavitha P,Control and Automation,Asso. Prof.,9600699189,kavitha.p@vit.ac.in,TT 218 
-10668,Manimozhi  M,Control and Automation,Asso. Prof.,9443538068,mmanimozhi@vit.ac.in,TT 130 B
-11817,Monica Subashini  M,Control and Automation,Asso. Prof.,9789995372,monicasubashini.m@vit.ac.in,TT 533A
-14411,Vinodh Kumar E,Control and Automation,Asso. Prof.,9962093935,vinodhkumar.e@vit.ac.in,TT 319
-14805,Geetha M,Control and Automation,Asso. Prof.,9566919631,geetha.mani@vit.ac.in ,TT 521
-11176,Bagyaveereswaran  V,Control and Automation,Asst. Prof. (SG.),9842638210,vbagyaveereswaran@vit.ac.in,TT 534
-12440,Jaganatha Pandian B,Control and Automation,Asst. Prof. (SG.),9840571695,jaganathapandian@vit.ac.in,TT 532
-10616,Rashmi Ranjan Das,Control and Automation,Asst. Prof. (SG.),9092077298,rashmiranjandas@vit.ac.in,TT Anx 104G
-10675,Ruban  N,Control and Automation,Asst. Prof.(Sr),9443449517,nruban@vit.ac.in,TT 534C
-13650,Joshua Reddipogu,Control and Automation,Asst. Prof.(Sr),9894552492,joshua.reddipogu@vit.ac.in,TT Anx 102H
-12439,Dhanamjayulu C,Control and Automation,Asst. Prof.(Sr),9042351765,dhanamjayulu.c@vit.ac.in,TT 533 F
-12960,Praveenkumar M,Control and Automation,Asst. Prof.(Sr),9791435394,praveen.m@vit.ac.in,TT 045
-11159,Sharmila  A,Control and Automation,Asst. Prof.(Sr),9487556692,asharmila@vit.ac.in,TT 534
+empid,name,dept,deg,rank,mob,email,cabin
+10248,P. Vijaya Priya,Electrical Engineering,Asso. Prof.,4,9952392065,pvijayapriya@vit.ac.in,ALM304
+10481,Sathishkumar  K,Electrical Engineering,Asso. Prof.,4,9443623508,ksathishkumar@vit.ac.in,TT 247(Lab)
+11815,Ravi  K,Electrical Engineering,Asso. Prof.,4,9486940357,k.ravi@vit.ac.in,TT 133A
+10510,Prabhakar Karthikeyan  S,Electrical Engineering,Asso. Prof.,4,9894610689,sprabhakarkarthikeyan@vit.ac.in,TT AX 102 D
+11562,Saravanan  B,Electrical Engineering,Asso. Prof.,4,9659954979,bsaravanan@vit.ac.in,TT 344(Lab)
+11472,Belwin Edward  J,Electrical Engineering,Asso. Prof.,4,9994911487,jbelwinedward@vit.ac.in,TT 532E
+10304,Rani  C,Electrical Engineering,Asso. Prof.,4,9626188555,crani@vit.ac.in,TT 131 
+12485,Thirumalaivasan R,Electrical Engineering,Asso. Prof.,4,9444224855,thirumalai.r@vit.ac.in,TT 344(Lab)
+12486,Janaki M,Electrical Engineering,Asso. Prof.,4,9444226403,janaki.m@vit.ac.in,TT 319 A
+11074,Mageshvaran  R,Electrical Engineering,Asso. Prof.,4,9940859856,mageshvaranr@vit.ac.in,TT 034
+14762,S Venkatesh,Electrical Engineering,Asso. Prof.,4,9003720156,venkatesh.srinivasan@vit.ac.in ,TT 037 (Lab)
+10899,Rama Prabha D,Electrical Engineering,Asso. Prof.,4,9443099590,dramaprabha@vit.ac.in,TT 031
+10116,Mahalakshmi  P,Instrumentation,Asso. Prof.,4,9952390076,pmahalakshmi@vit.ac.in,TT 131
+13957,Arungalai Vendan S,Instrumentation,Asso. Prof.,4,9994748264,arungalaivendan@vit.ac.in,TT 034 E
+12215,Sudha  R,Instrumentation,Asso. Prof.,4,9578409526,sudha.r@vit.ac.in,TT 534A
+11341,Amutha Prabha N,Instrumentation,Asso. Prof.,4,9486750593,amuthaprabha@vit.ac.in,TT 515(Lab)
+12973,Rajini G K,Instrumentation,Asso. Prof.,4,9790107509,rajini.gk@vit.ac.in,TT 514
+10368,Balaji  S,Instrumentation,Asso. Prof.,4,9443436702,sbalaji@vit.ac.in,TT 031
+11355,Balamurugan  S,Instrumentation,Asso. Prof.,4,9994085352,sbalamurugan@vit.ac.in,TT 031
+10943,Venkataraman  M.N,Instrumentation,Asso. Prof.,4,9884520878,mnvenkataraman@vit.ac.in,TT 401(Lab)
+11182,Palanisamy  K,Energy and Power Electronics,Asso. Prof.,4,9894718720,kpalanisamy@vit.ac.in,TT 532 E
+10433,Subramanian  K,Energy and Power Electronics,Asso. Prof.,4,9443687500,ksubramanian@vit.ac.in,TT 34A
+13591,Sreejith S,Energy and Power Electronics,Asso. Prof.,4,9790636602,sreejith.s@vit.ac.in,TT 034
+11080,Sudhakar  N,Energy and Power Electronics,Asso. Prof.,4,9942002947,nsudhakar@vit.ac.in,TT 533D
+12957,Ponnambalam P,Energy and Power Electronics,Asso. Prof.,4,9894777845,ponnambalam.p@vit.ac.in,TT 533B
+13070,Elangovan D,Energy and Power Electronics,Asso. Prof.,4,9894207260,elangovan.devaraj@vit.ac.in,TT Anx204D
+14793,Indra Gandhi V,Energy and Power Electronics,Asso. Prof.,4,9750603539,indragandhi.v@vit.ac.in  ,TT 044 (Lab)
+11975,Chitra  A,Energy and Power Electronics,Asso. Prof.,4,9894760447,chitra.a@vit.ac.in,TT 034
+12943,Arun Kumar G,Energy and Power Electronics,Asso. Prof.,4,9994247789,g.arunkumar@vit.ac.in,TT Anx 104 C
+11558,Razia Sultana  W,Energy and Power Electronics,Asso. Prof.,4,9943295041,wraziasultana@vit.ac.in,TT 034
+15251,Brisilla R M,Energy and Power Electronics,Asso. Prof.,4,9965253098,brisilla.rm@vit.ac.in,TT Anx 104 F
+15301,Raja Singh R,Energy and Power Electronics,Asso. Prof.,4,8300754450,rrajasingh@vit.ac.in,TT 236
+12214,Prabhu K. R,Control and Automation,Asso. Prof.,4,9578409525,prabhu.kr@vit.ac.in,TT 532 D
+13943,Kavitha P,Control and Automation,Asso. Prof.,4,9600699189,kavitha.p@vit.ac.in,TT 218 
+10668,Manimozhi  M,Control and Automation,Asso. Prof.,4,9443538068,mmanimozhi@vit.ac.in,TT 130 B
+11817,Monica Subashini  M,Control and Automation,Asso. Prof.,4,9789995372,monicasubashini.m@vit.ac.in,TT 533A
+14411,Vinodh Kumar E,Control and Automation,Asso. Prof.,4,9962093935,vinodhkumar.e@vit.ac.in,TT 319
+14805,Geetha M,Control and Automation,Asso. Prof.,4,9566919631,geetha.mani@vit.ac.in ,TT 521
+14775,Mahendra V. Chilukuri,Energy and Power Electronics,Asso.Prof,4,8056007226,mahendra.chilukuri@vit.ac.in ,TT Anx 203 D
+13181,Dr. Abhishek G,Instrumentation,Asst. Prof.,4,9003542499,abhishek.g@vit.ac.in,TT 534 D
+10162,Anbarasan P,Electrical Engineering,Asst. Prof. (SG.),5,9443371755,panbarasan@vit.ac.in,TT 319
+10305,Raju  J,Energy and Power Electronics,Asst. Prof. (SG.),5,9994440614,jraju@vit.ac.in,TT 329C
+11201,Arun  N,Energy and Power Electronics,Asst. Prof. (SG.),5,9789231117,narun@vit.ac.in,TT Anx 102A
+11176,Bagyaveereswaran  V,Control and Automation,Asst. Prof. (SG.),5,9842638210,vbagyaveereswaran@vit.ac.in,TT 534
+12440,Jaganatha Pandian B,Control and Automation,Asst. Prof. (SG.),5,9840571695,jaganathapandian@vit.ac.in,TT 532
+10616,Rashmi Ranjan Das,Control and Automation,Asst. Prof. (SG.),5,9092077298,rashmiranjandas@vit.ac.in,TT Anx 104G
+15433,Kavitha V,Electrical Engineering,Asst. Prof.(Jr),7,9944507148,kavitha.v@vit.ac.in,TT 44
+15554,Mekalathur B Hemanth Kumar,Electrical Engineering,Asst. Prof.(Jr),7,8125332276,hemanthkumar.b@vit.ac.in,TT344
+15555,Challa Babu,Electrical Engineering,Asst. Prof.(Jr),7,8332947890,challa.babu@vit.ac.in,TT 515
+15556,Nageswara Rao A,Electrical Engineering,Asst. Prof.(Jr),7,7036888836,nageswararao.a@vit.ac.in,TT 44
+15557,Pydikalva Padmavathi,Electrical Engineering,Asst. Prof.(Jr),7,8248197677,padmavathi.p@vit.ac.in,TT 344
+15558,Rahul S G,Electrical Engineering,Asst. Prof.(Jr),7,9597632595,rahul.sg@vit.ac.in,TT 514
+15559,Jyotheeswara Reddy Kalvakurthi,Electrical Engineering,Asst. Prof.(Jr),7,9441097835,jyotheeswara.reddy@vit.ac.in,TT 520
+15560,Damodhar Reddy,Electrical Engineering,Asst. Prof.(Jr),7,9885294533,damodhar.reddy@vit.ac.in,TT 401
+15561,Ravi Dharavath,Electrical Engineering,Asst. Prof.(Jr),7,9848349070,ravi.dharavath@vit.ac.in,TT 344
+15562,Kola Muralikumar,Electrical Engineering,Asst. Prof.(Jr),7,9676627447,kola.muralikumar@vit.ac.in,TT 235
+15563,Senthil Prabu R,Electrical Engineering,Asst. Prof.(Jr),7,9487007524,senthilprabu.r@vit.ac.in,TT 44
+15564,Kanike Vinod Kumar,Electrical Engineering,Asst. Prof.(Jr),7,9491406706,kanikevinodkumar@vit.ac.in,TT 202
+15565,Monica.P,Electrical Engineering,Asst. Prof.(Jr),7,8297721022,monica.p@vit.ac.in,TT 433
+15566,Dhivyasri G,Electrical Engineering,Asst. Prof.(Jr),7,9486791900,dhivyasri.g@vit.ac.in,TT 514
+15567,Dhanup S Pillai,Electrical Engineering,Asst. Prof.(Jr),7,7530000713,dhanuppillai.s@vit.ac.in,TT 235
+15568,Saranya S,Electrical Engineering,Asst. Prof.(Jr),7,9944927730,s.saranya@vit.ac.in,TT 045
+15569,Kishore Kumar B,Electrical Engineering,Asst. Prof.(Jr),7,7981944234,kishorekumar.b@vit.ac.in,TT 247
+15570,Peter K Joseph,Electrical Engineering,Asst. Prof.(Jr),7,9947618810,peterk.joseph@vit.ac.in,TT 044
+15571,Puppala Rajendhar,Electrical Engineering,Asst. Prof.(Jr),7,9492027713,puppala.rajendhar@vit.ac.in,TT 202
+15572,Kartheek Vankadara,Electrical Engineering,Asst. Prof.(Jr),7,9703276995,kartheek.vankadara@vit.ac.in,TT 433
+15573,Venkateswari R,Electrical Engineering,Asst. Prof.(Jr),7,8220439963,venkateswari.r@vit.ac.in,TT 037
+15574,Neelamsetti Kirn Kumar,Electrical Engineering,Asst. Prof.(Jr),7,9866366939,kirnkumar.n@vit.ac.in,TT 202
+15575,Srisailam Sreedhar,Electrical Engineering,Asst. Prof.(Jr),7,7204891557,srisailam.sreedhar@vit.ac.in,SJT 520
+15736,Venkateswarlu S,Electrical Engineering,Asst. Prof.(Jr),7,8500737037,venkateswarlu.s@vit.ac.in,TT 344
+15737,Kola Sampangi Sambai,Electrical Engineering,Asst. Prof.(Jr),7,9491603916,sampangi.sambaiah@vit.ac.in,TT 202
+12959,Gokula Krishnan G,Electrical Engineering,Asst. Prof.(Sr),6,9865307698,gokul.g@vit.ac.in,TT Anx 202 H
+11930,Vanishree J,Electrical Engineering,Asst. Prof.(Sr),6,7708464426,j.vanishree@vit.ac.in,TT Anx 102E
+13406,Thamilmaran A,Electrical Engineering,Asst. Prof.(Sr),6,9345588224,thamilmaran.a@vit.ac.in,SJT 525
+12213,Sri Hari Mandava,Electrical Engineering,Asst. Prof.(Sr),6,9751296300,mandavasrihari@vit.ac.in,TT 035
+12415,Karthikeyan A,Instrumentation,Asst. Prof.(Sr),6,9884725721,karthikeyan.arun@vit.ac.in,TT Anx 202 D
+11359,Marimuthu  R,Instrumentation,Asst. Prof.(Sr),6,9976494888,rmarimuthu@vit.ac.in,TT 031
+10399,Santhakumar R,Instrumentation,Asst. Prof.(Sr),6,9894452792,santhakumar@vit.ac.in,TT 034
+12480,Vidhyasagar .G,Instrumentation,Asst. Prof.(Sr),6,9894540408,vidhyasagar.g@vit.ac.in,TT 128
+13570,Uma Sathyakam P,Instrumentation,Asst. Prof.(Sr),6,9962115704,umasathyakam.p@vit.ac.in,TT Anx 202A
+11075,Sankardoss  V,Energy and Power Electronics,Asst. Prof.(Sr),6,9095174226,vsankardoss@vit.ac.in,TT 433 (Lab)
+10675,Ruban  N,Control and Automation,Asst. Prof.(Sr),6,9443449517,nruban@vit.ac.in,TT 534C
+13650,Joshua Reddipogu,Control and Automation,Asst. Prof.(Sr),6,9894552492,joshua.reddipogu@vit.ac.in,TT Anx 102H
+12439,Dhanamjayulu C,Control and Automation,Asst. Prof.(Sr),6,9042351765,dhanamjayulu.c@vit.ac.in,TT 533 F
+12960,Praveenkumar M,Control and Automation,Asst. Prof.(Sr),6,9791435394,praveen.m@vit.ac.in,TT 045
+11159,Sharmila  A,Control and Automation,Asst. Prof.(Sr),6,9487556692,asharmila@vit.ac.in,TT 534
+12490,Meikandasivam S,Electrical Engineering,HOD & Asso. Prof.,1,9791396835,meikandasivam.s@vit.ac.in,TT 520
+11051,Vivekanandan  S,Instrumentation,HOD & Asso. Prof.,1,8124274447,svivekanandan@vit.ac.in,TT520
+12232,Umashankar  S,Energy and Power Electronics,HOD & Asso. Prof.,1,9003260199,umashankar.s@vit.ac.in,TT 508
+10529,Geethanjali  P ,Control and Automation,HOD & Asso. Prof.,1,9944980194,pgeethanjali@vit.ac.in,TT 508
+12216,Vijayakumar D,Electrical Engineering,Professor,3,9952068961,vijayakumar.d@vit.ac.in,TT 433 (Lab)
+14845,Jacob Raglend,Electrical Engineering,Professor,3,9965853338,jacobraglend@vit.ac.in ,TT 533
+10387,Sivabalan S,Instrumentation,Professor,3,9894681056,ssivabalan@vit.ac.in,TT 139
+10171,Kowsalya  M,Energy and Power Electronics,Professor,3,7418077407,mkowsalya@vit.ac.in,TT 030
+12250,Rajasekar N,Energy and Power Electronics,Professor,3,9952362301,nrajasekar@vit.ac.in,TT 239
+15295,YP Obulesu,Energy and Power Electronics,Professor,3,9966747042,yp.obulesu@vit.ac.in,SJT 614 A
+12196,Mathew M Noel ,Control and Automation,Professor,3,9489343787,mathew.m@vit.ac.in,TT 338
+13318,Raghunathan T,Control and Automation,Professor,3,9489969616,raghunathan.t@vit.ac.in,TT 137
+10091,Ramesh  V,Control and Automation,Professor,3,9944730510,vramesh@vit.ac.in,TT 240
+10231,Saravanakumar  R,Control and Automation,Professor,3,9944507148,rsaravanakumar@vit.ac.in,TT 138
+10680,Arulmozhivarman P,Instrumentation,Professor& Dean,0,9443311373,parulmozhivarman@vit.ac.in,TT 510
+10020,Jayabarathi  T,Electrical Engineering,Sr. Professor,2,9488276543,tjayabarathi@vit.ac.in,TT 241
+11308,Partha Sharathi Mallick,Instrumentation,Sr. Professor,2,9566656769,psmallick@vit.ac.in,MB134
