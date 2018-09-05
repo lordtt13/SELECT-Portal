@@ -1,16 +1,43 @@
 <% include ./partials/header.ejs%>
 
-<%    start.forEach(function(start){ %>
-   <div style="text-align:center">
-    
-    <div class="thumbnail">
-        <img src="<%= start.image %>">
+    <div class="col-md-offset-2 col-md-7">
+        <div class="panel" style="border-color:#072C53;">
+            <div class="panel-body">
+                <h3 align ="left"><span class="glyphicon glyphicon-education"></span> About the School</h3>
+                <img src="images/events/smec_weld.jpg" class="img-rounded" width="100%" height="300" alt="" />
+                <br>
+                <p  align="justify" style="padding-top:30px;">&#39Develop skilled engineers to meet industry needs and hence develop responsible citizens for our country and society&#39. <br>
+
+                    The School of Electrical Engineering (SELECT) has over 109 faculty members who have done their UG and PG degrees from the top-notch universities. The faculty members of this school are consistently doing well in teaching and research. Faculty members and students of SELECT frequently get awards, prizes for outstanding research contributions in their respective fields.
+                    The placement record of the School has always been impressive. Almost 100% of the students get job from the campus placement and many of them are getting it in core companies every year. We encourage the students to do engineering projects during their B.Tech and M.Tech degrees. The School has state-of-the art laboratories in almost all the areas of Electrical, Electronics and Instrumentation Engineering. The School has the latest simulation tools to cater to various specializations and is equipped with facilities for measurement, characterization and synthesis of experimental as well as theoretical results. Every year, students get scholarships to do their final year projects abroad under the Semester Abroad Program (SAP).<br><br>
+                    Open Gallery SELECT has has industry sponsored advanced laboratories for doing research. Schneider Electric, India and NxP Semiconductors, India, have established Centre of Excellence for students R&D activities under the guidance of faculty members and Industry experts.<br><br>
+                    The School offers B.Tech (Electrical and Electronics Engineering), B.Tech (Electronics and Instrumentation Engineering), M.Tech (Power Electronics and Drives) and M. Tech (Control and Automation) , M.S. by Research and Ph.D. in Engineering. Both B.Tech and M.Tech programmes attract the brightest students of the country and abroad every year. The B.Tech (Electrical and Electronics Engineering) is accredited by the Engineering Accreditation Commission of ABET, http://www.abet.org. All UG & PG programmes of the school are accredited by the Institution of Engineering and Technology (IET), U.K.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="caption">
-        <font size="15"><%= start.usecase %></font>
+    <div class="col-md-offset-2 col-md-7">
+        <div class="panel" style="border-color:#072C53;">
+            <div class="panel-body">
+                <h3 align ="left"><span class="glyphicon glyphicon-education"></span> Programmes Offered</h3>
+                <h4 align ="left"><span class="glyphicon glyphicon-education"></span> Bachelors Programmes</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">B.Tech - Electrical and Electronics Engineering</li>
+                    <li class="list-group-item">B.Tech - Electronics and Instrumentation Engineering</li>
+                </ul>
+                <h4 align ="left"><span class="glyphicon glyphicon-education"></span> Masters Programmes</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">M.Tech - Power Electronics and Drives</li>
+                    <li class="list-group-item">M.Tech - Control and Automation</li>
+                </ul>
+                <h4 align ="left"><span class="glyphicon glyphicon-education"></span> Research Programmes</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Ph.D</li>
+                    <li class="list-group-item">M.Tech - by Research</li>
+
+                </ul>
+            </div>
+        </div>
     </div>
-    
-   </div> 
-<% }); %> 
 
 <% include ./partials/footer.ejs %>

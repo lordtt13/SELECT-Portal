@@ -19,10 +19,8 @@ var teacherSchema= new mongoose.Schema({
 
 var teacher= mongoose.model("teacher",teacherSchema);
 
-app.get('/', function (req, res) {
-    var start=[{usecase:"Site Under Construction",
-        image:"https://images.static-collegedunia.com/public/college_data/images/pdfthumb/1472706286PAT-brochure/full-0.jpg"}]
-    res.render("landing.ejs",{start:start});
+app.get('/', function (req, res){
+    res.render("landing.ejs");
 });
 
 app.get('/faculty',function(req,res){
