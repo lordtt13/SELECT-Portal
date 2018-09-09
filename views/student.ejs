@@ -1,0 +1,167 @@
+<% include ./partials/header.ejs%>
+<script type='text/javascript'>
+    $('.navbar-nav .active').removeClass('active');
+    $('#nav-stud').addClass('active');
+</script>
+<div class="row">
+<div class="col-md-offset-2 col-md-8">
+    <!-- ####################################################################################################### -->
+
+<table class="table table-bordered" align="center">
+  <th> <h3 align="center">Students Strength - SELECT</h3></th>
+  	<tr> 
+  		<h3><td align="center"><strong>FALL SEMESTER 2017-18</strong></td></h3>
+    </tr>
+</table>
+
+ <div class="row">
+ <div class="col-md-12">
+ <div class="panel" style="border-color:#072C53;">
+   <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-stats"></span> Student Strength - Degree Wise</h3></div>
+   <div class="panel-body">
+       <div id="degreeStudentsChart" style="widh:100%"></div>
+  </div>
+		
+</div>
+</div>
+		
+</div>
+
+
+ <div class="row">
+  <div class="col-md-12">
+<table class="table table-bordered  table-hover">
+    <thead>
+    <tr>
+    <th align="center" height="20">Year (B.tech Programme)</th>
+    
+	<th align="center" height="20"><strong>EEE</strong></th>
+	<th align="center" height="20"><strong>EIE</strong></th>
+	<th align="center" height="20">Total</th>
+          </tr>
+          </thead>
+          <tbody>	  
+		  
+		  
+		  
+<tr>
+<td align="center">2018</td>
+
+<td align="center">285</td><td align="center">128</td><td align="center">413</td>
+</tr>
+<tr>
+<td align="center">2017</td>
+
+<td align="center">300</td><td align="center">100</td><td align="center">400</td>
+</tr>
+
+<tr>
+<td align="center">2016</td>
+
+<td align="center">324</td><td align="center">89</td><td align="center">413</td>
+</tr>
+<tr>
+<td align="center">2015</td>
+
+<td align="center">252</td><td align="center">71</td><td align="center">323</td>
+</tr>
+
+<tr>
+<td align="center"><strong>TOTAL</strong></td>
+
+<td align="center">1161</td><td align="center">388</td><td align="center">1549</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+    </div>
+<br/>
+<br/>
+<br/>
+
+
+
+<div class="row">
+  <div class="col-md-12 ">
+<table class="table table-bordered  table-hover">
+    <thead>
+    <tr>
+    <th align="center" height="20">Year (M.tech Programme)</th>
+    
+	<th align="center" height="20"><strong>PED</strong></th>
+	<th align="center" height="20"><strong>MAC</strong></th>
+	<th align="center" height="20">Total</th>
+          </tr>
+          </thead>
+          <tbody>	  
+		  
+		  
+		  
+<tr>
+<td align="center">2018</td>
+
+<td align="center">39</td><td align="center">39</td><td align="center">78</td>
+</tr>
+<tr>
+<td align="center">2017</td>
+
+<td align="center">49</td><td align="center">35</td><td align="center">84</td>
+</tr>
+
+<tr>
+<td align="center"><strong>TOTAL</strong></td>
+
+<td align="center">88</td><td align="center">74</td><td align="center">162</td>
+</tr>
+
+</tbody>
+</table>
+<br>
+
+</div>
+
+</div>
+		
+</div>
+</div>
+
+
+
+   
+
+   <center>
+   	<strong>
+   		<h3>TOTAL STRENGTH - 1711</h3>
+   	</strong>
+   </center>
+<br>
+<br>
+<script type='text/javascript'>
+    $(window).resize(function(){
+        
+    });
+    new Morris.Bar({
+  // ID of the element in which to draw the chart.
+  element: 'degreeStudentsChart',
+  // Chart data records -- each entry in this array corresponds to a point on
+  // the chart.
+  data: [
+    { degree:'EEE', students:1161},
+    { degree: 'EIE', students: 388 },
+    { degree: 'PED',students:88 },
+    { degree: 'MAC', students: 74 }
+  ],
+  // The name of the data record attribute that contains x-values.
+  xkey: 'degree',
+  // A list of names of data record attributes that contain y-values.
+  ykeys: ['students'],
+  // Labels for the ykeys -- will be displayed when you hover over the
+  // chart.
+  labels: ['Number of Students'],
+        resize:true
+});
+</script>
+<% include ./partials/footer.ejs %>

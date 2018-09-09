@@ -50,6 +50,13 @@ app.get('/faculty',function(req,res){
             }
     });
     
+    
+});
+app.get('/students', function (req, res){
+    res.render("student.ejs");
+});
+app.get('/staff', function (req, res){
+    res.render("staff.ejs");
 });
 
 app.listen(63342,process.env.IP,function(){
@@ -59,7 +66,6 @@ app.listen(63342,process.env.IP,function(){
 
 function sortTeachers(teachers){
     var l= teachers.length;
-    console.log(teachers);
     var i,j;
     for(i=l-1;i>0;i--){
         for(j=0;j<i;j++){

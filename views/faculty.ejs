@@ -2,6 +2,25 @@
 <script type  ="text/javascript" src = "http://localhost:63342/scripts/faculty.js"></script>
 <div class="container">
     
+    <div class="row">
+        <!--############################################################################################################### 
+#####################################################################################################-->
+ <div class="col-md-12 col-sm-10" >
+ <div class="panel" style="border-color:#072C53;">
+   <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-stats"></span> Faculty Strength - Department Wise</h3></div>
+   <div class="panel-body">
+       <div class="col-md-6 col-md-offset-2">
+           <canvas id="myChart" style=" height:250px"></canvas>
+  </div>
+</div>		
+</div>
+</div>
+        
+        
+<!--############################################################################################################### 
+#####################################################################################################-->		
+</div>
+    
     
     <div id="deee" class="departmentContainer">
 <div id="deeerow" class="department-heading" >
@@ -31,6 +50,11 @@
         
     </div>
         </div></div>
+    
+    
+    <!--############################################################################################################### 
+#####################################################################################################-->
+    
     
     <div id="deie" class="departmentContainer">
 <div id="deierow" class="department-heading" >
@@ -62,6 +86,10 @@
             </div>
 </div>
     
+    <!--############################################################################################################### 
+#####################################################################################################-->
+    
+    
     <div id="depe" class="departmentContainer">
 <div id="deperow" class="department-heading" >
     <div class="departmentName"><b>Department of Energy and Power Electronics</b>
@@ -90,6 +118,9 @@
         </div>
     </div>
 </div>
+    
+    <!--############################################################################################################### 
+#####################################################################################################-->
     
     <div id="dcae" class="departmentContainer">
 <div id="dcaerow" class="department-heading" >
@@ -121,6 +152,34 @@
     </div>
         </div>
     
+   <!--############################################################################################################### 
+#####################################################################################################-->
     
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['Department of Electrical Engineering','Department of Instrumentation',
+                 'Department of Energy and Power Electronics','Department of Control and Automation'],
+        datasets: [{
+            label: "My First dataset",
+            backgroundColor: ['rgb(21, 30, 253)','rgb(72, 79, 255)','rgb(118, 123, 253)','rgb(189, 192, 255)'],
+            borderColor: ['rgb(24, 33, 255)','rgb(72, 79, 255)','rgb(118, 123, 253)','rgb(189, 192, 255)'],
+            hoverBackgroundColor:['rgb(21, 30, 253)','rgb(72, 79, 255)','rgb(118, 123, 253)','rgb(189, 192, 255)'],
+            data: [<%=electrical.length%>,<%=instruments.length%>, <%=pedrive.length%>, <%=instruments.length%>]
+        }]
+        
+    },
+
+    // Configuration options go here
+    options: {  legend:{
+            position:'left'
+    }}
+});
+</script>
 </div>
 <% include ./partials/footer.ejs %>
