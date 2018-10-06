@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="icon" type="image/ico" href="http://localhost:63342/images/favicon_initial.ico">
      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-
+    <link rel="stylesheet" href='http://localhost:63342/stylesheets/portal.css'>
     </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,15 +16,15 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>    
-    
-<div class="row .heading-bar " style="background-color:#3B5998;">
+    <div class="container-fluid">
+<div class="row heading-bar " style="background-color:#3B5998;">
     <div class="col-md-offset-1 col-md-4"><img src="http://localhost:63342/images/vit_logos/vit_logo_white.png"
                                                height="80" alt="VIT Logo"/></div>
     <div class="col-md-6" style="text-align:right;"><font color=#FFFFFF><h2>
                 <b>School of Electrical Engineering</b><br>
                 VIT University</h2>
         </font></div>
-</div>
+</div></div>
     
 <nav class="navbar navbar-default sticky-top">
     <div class="container-fluid">
@@ -34,7 +34,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li id='nav-home' class="active"><a href="/">Home</a></li>
-                    <li id='nav-admin'><a href="">Administration</a></li><li class="divider"></li>
+                    <li id='nav-admin'><a href="/administration">Administration</a></li><li class="divider"></li>
                     <li id='nav-faculty'><a href="/faculty">Faculty</a></li><li class="divider"></li>
                     <li id='nav-staff'><a href="/staff">Staff</a></li>
 
@@ -48,8 +48,8 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" >IQAC Portal
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="admin_login.html">Administrator Login</a></li><li class="divider"></li>
-                            <li ><a href="fac_login.html">Faculty Login</a></li><li class="divider"></li>
+                            <li><a href="/admin_login">Administrator Login</a></li><li class="divider"></li>
+                            <li ><a href="/fac_login">Faculty Login</a></li><li class="divider"></li>
                             <li><a href="#">Staff Login</a></li>
                         </ul>
                     </li>
