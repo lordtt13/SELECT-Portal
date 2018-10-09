@@ -8,6 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="raphael" level="application" />
+    <orderEntry type="library" name="morris" level="application" />
+    <orderEntry type="library" name="Chart" level="application" />
   </component>
 </module>

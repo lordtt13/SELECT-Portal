@@ -1,31 +1,31 @@
 <% include ./partials/header.ejs%>
 <script>
-    $(document).ready(function(){
-        $('body').css('background','#dbe9fd');
-        $('.navbar-nav .active').removeClass('active');
-    });
+$(document).ready(function(){
+    $('body').css('background','#dbe9fd');
+     $('.navbar-nav .active').removeClass('active');
+});
 </script>
 
 <div class='login-body'>
     <div class="row">
         <div class="col-md-4 col-sm-4"></div>
-        <div class="loginbox col-md-4 col-sm-4">
+<div class="loginbox col-md-4 col-sm-4">
             <img src="http://localhost:63342/images/portalmax.jpg" class="portalmax">
-            <h1> Login</h1>
-            <form action = "/login" method="post">
+            <h1> Register New User</h1>
+            <form action = "/register" method="POST">
                 <br>
-
-                <p style="text-align:left">Username</p>
+                
+            <p style="text-align:left">Username</p>
                 <input type="text" name="username" placeholder="Enter Username">
                 <br>
-                <p style="text-align:left">Password</p>
+            <p style="text-align:left">Password</p>
                 <input type="password" name="password" placeholder="Enter Password">
                 <br>
-                <input type="Submit" name="" value="Login">
+            <input type="Submit" name="" value="Register">
 
             </form>
         </div>
         <div class="col-md-4 col-sm-4"></div>
-    </div>
+        </div>
 </div>
 <% include ./partials/footer.ejs %>
