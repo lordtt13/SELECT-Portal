@@ -49,9 +49,11 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" >IQAC Portal
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li ><a href="/register">Faculty Register</a></li><li class="divider"></li>
-                            <li><a href="/login">Faculty Login</a></li><li class="divider"></li>
+                            <% if(!currentUser){%>
+                            <li><a href="/Fac_login">Faculty Login</a></li>
+                            <%}else {%>
                             <li><a href="/logout">Logout</a></li>
+                            <%}%>
                         </ul>
                     </li>
                 </ul>

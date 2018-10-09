@@ -1,11 +1,10 @@
-var express = require("express");
-var bodyParser= require("body-parser");
-var mongoose = require("mongoose");
-var expressSanitizer = require("express-sanitizer");
-var methodOverride = require("method-override");
-var passport = require("passport");
-var LocalStrategy  = require("passport-local");
-var passportLocalMongoose = require("passport-local-mongoose");
+var express           = require("express"),
+    bodyParser        = require("body-parser"),
+    mongoose          = require("mongoose"),
+    expressSanitizer  = require("express-sanitizer"),
+    methodOverride    = require("method-override"),
+    passport          = require("passport"),
+    LocalStrategy     = require("passport-local");
 
 var app=express();
 
@@ -13,17 +12,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(expressSanitizer());
 app.set("view engine","ejs");
 app.use(express.static('public'));
-mongoose.connect("mongodb://localhost/SELECT");
 app.use(methodOverride("_method"));
 
-var UserSchema = new mongoose.Schema({
-    username: String,
-    password: String
-});
 
-UserSchema.plugin(passportLocalMongoose);
+mongoose.connect("mongodb://localhost/SELECT");
 
-var User = mongoose.model("User", UserSchema);
+
+var User = require("./models/user");
 
 app.use(require("express-session")({
     secret: "SDC sucks",
@@ -40,9 +35,14 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
+app.use(function(req,res,next){
+   res.locals.currentUser = req.user;
+   next();
+});
+
 //Routes
 var faculty=require('./routes/faculty');
-var facultyLogin  =require('./routes/facultyLogin')
+var facultyLogin  =require('./routes/facultyLogin');
 
 
 
@@ -66,32 +66,10 @@ app.get('/administration',function(req,res){
     res.render("administration.ejs");
 });
 
-app.get("/register", function(req, res){
-    res.render("register.ejs");
-});
-
-app.post("/register", function(req, res){
-    User.register(new User({username: req.body.username}), req.body.password, function (err, user){
-        if(err) {
-            console.log(err);
-            return res.render("landing.ejs");
-        }
-        passport.authenticate("local")(req, res, function(){
-            res.redirect("register.ejs");
-        });
-    });
-});
-
-app.get("/login", function(req, res){
-    res.render("login.ejs");
-});
 
 
-app.post("/login", passport.authenticate("local", {
-    successRedirect: "/",
-    failureRedirect: "/login",
-}), function(req, res){
-});
+
+//TODO: We can ask them to enter their email id check it with already existing database and then generate a random password and send it to them
 
 app.get("/logout", function(req, res){
     req.logout();
