@@ -1,38 +1,53 @@
 var express               = require('express'),
     router                = express.Router() ,
     mongoose              = require("mongoose"),
-    passportLocalMongoose = require("passport-local-mongoose"),
     passport              = require("passport"),
-    User                  = require("../models/user")
+    User                  = require("../models/user"),
+    generator             = require('generate-password');
+
+var teacher= mongoose.model("teacher");
 
 
 router.get("/", function(req, res){
-    res.render("login.ejs");
+    res.render("login.ejs",{query:req.query});
 });
 
 
 router.post("/", passport.authenticate("local", {
-    successRedirect: "/",
-    failureRedirect: "/login",
-}), function(req, res){
-});
+    successRedirect: "/faculty",
+    failureRedirect: "?error=402",
+}));
 
 
 router.get("/register", function(req, res){
-    res.render("register.ejs");
+    res.render("register.ejs",{query: req.query});
 });
 
 router.post("/register", function(req, res){
-    User.register(new User({username: req.body.username,email:'Email'}), req.body.username, function (err, user) {
-        if (err) {
-            console.log(err);
-            return res.render("landing.ejs");
+    var password = generatePassword();
+    teacher.find({email:req.body.email},function(err,teachers){
+        if(teachers.length==1) {
+            User.register(new User({username: teachers[0].empid+''}),password,
+                 function (err, user) {
+                    if (err) {
+                        console.log(err);
+                        return res.render("landing.ejs");
+                    }
+                    res.redirect('/fac_login');
+                });
+        } else {
+            res.redirect('?error=401');
         }
-        passport.authenticate("local")(req, res, function () {
-            res.redirect("register.ejs");
-        });
     });
+
 });
 
+function generatePassword(){
+    var password = generator.generate({
+        length:6,
+        numbers:true
+    });
+    return password;
+}
 
 module.exports=router;
