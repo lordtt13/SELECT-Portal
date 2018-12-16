@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs%>
+<script>
+$(document).ready(function(){
+    $('body').css('background','#dbe9fd');
+     $('.navbar-nav .active').removeClass('active');
+});
+</script>
+
+<div class='login-body'>
+    <div class="row">
+        <div class="col-md-4 col-sm-4"></div>
+<div class="loginbox col-md-4 col-sm-4">
+            <img src="http://localhost:63342/images/portalmax.jpg" class="portalmax">
+            <h1> Register New User</h1>
+    <%if(query.error){%>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+            Enter a valid email address
+        </div>
+    <%}%>
+            <form action = "/fac_login/register/" method="POST">
+                <br>
+                
+            <p style="text-align:left">Email</p>
+                <input type="text" name="email" placeholder="Enter Email">
+                <br>
+                <br>
+            <input type="Submit" name="" value="Register">
+
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+        </div>
+</div>
+<% include ./partials/footer.ejs %>
