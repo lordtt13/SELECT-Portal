@@ -35,22 +35,21 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li id='nav-home' class="active"><a href="/">Home</a></li>
-                    <li id='nav-admin'><a href="/administration">Administration</a></li><li class="divider"></li>
-                    <li id='nav-faculty'><a href="/faculty">Faculty</a></li><li class="divider"></li>
-                    <li id='nav-staff'><a href="/staff">Staff</a></li>
+                    <li id='nav-admin'><a href="10.50.215.115:63342/administration">Administration</a></li><li class="divider"></li>                   <li id='nav-faculty'><a href="/faculty">Faculty</a></li><li class="divider"></li>
+                    <li id='nav-staff'><a href="10.50.215.115:63342/staff">Staff</a></li>
 
-                    <li id='nav-stud'><a href="/students">Students</a></li>
+                    <li id='nav-stud'><a href="10.50.215.115:63342/students">Students</a></li>
                     <li id='nav-labs'><a href="http://info.vit.ac.in/Virtual_Edu/index.html">Laboratories</a></li>
                     <li id='nav-res'><a href="http://info.vit.ac.in/Virtual_Edu/index.html">Research</a></li>
                     <li id='nav-proj'><a href="http://info.vit.ac.in/Virtual_Edu/index.html">Projects</a></li>
                     <li id='nav-publ'><a href="http://info.vit.ac.in/Virtual_Edu/index.html">Virtual Education</a></li>
                     <li id='nav-lvideos'><a href="http://info.vit.ac.in/Virtual_Edu/index.html">Lecture Videos</a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" >IQAC Portal
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Login Portal
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <% if(!currentUser){%>
-                            <li><a href="/Fac_login/">Faculty Login</a></li>
+                            <li><a href="/stud_login/">Student Login</a></li>
                             <%}else {%>
                             <li><a href="/logout">Logout</a></li>
                             <%}%>

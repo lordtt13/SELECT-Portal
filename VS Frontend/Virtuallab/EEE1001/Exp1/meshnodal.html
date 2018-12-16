@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:visited {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><font color = "white" size="6">BASIC ELECTRICAL AND ELECTRONICS LAB</th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="../Electriccircuitslab.html"><img src="images/Home.png" width="20" height="20" /></a></td>
+        <td width="39" align="center"><a href="../Electriccircuitslab.html"><img src="images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="../Exp2/TheveninsNortons.html"><img src="images/Right.png" width="20" height="20" /></td>
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="images/Contact.png" width="20" height="20" /></td>
+        
+      </tr>
+</table>
+
+
+<table width="100%" height="408" border="0">
+
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              
+              <tr>
+               <td><h2><font color="yellow">EXP:1</font></h2></td>
+               <td><h1><center><font color="yellow"><strong>VERIFICATION OF KVL AND KCL </strong></font></center></h1></td>
+               <td><font color="yellow"><p id="datetime"></p></font></td>
+               <td>&nbsp;&nbsp;</td>
+              </tr>
+				  
+				<script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">Solve the given circuit by Mesh & Nodal analysis and verify with OrCAD PSpice software.</font></p>
+                  <table width="51%" border="0" align="center">
+            <tr>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['ec1.jpg', 'ec2.jpg', 'ec3.jpg', 'ec4.jpg', 'ec5.jpg', 'ec6.jpg', 'ec7.jpg', 'mp1.png', 'mp2.png','mp3.png','mp4.png','mp5.png','mp6.png','mp7.gif','mp8.gif','mp9.gif','mp10.gif','mp11.png',
+'mp12.gif','mp13.gif','mp14.png','mp15.jpg','np3.png','np3.png','np3.gif', 'np4.jpg','np5.jpg','np6.png','np7.png','np8.png','np9.png','np10.png','np11.png','np12.png','np13.png','np14.png','np15.png','p1.png', 'p2.png',
+'p3.png','p4.png','p5.gif','p6.gif','p7.gif','p8.gif','p9.png','p10.png','p11.png','p12.jpg','p13.gif','p14.png','p15.png','p16.png','p17.jpg','p18.png','p19.png','p20.gif', ];
+                 $('<img class="fade-in" max.width="450" max.height="300" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+                </script></th>
+              
+             
+			  <!-- <img src="images/ec1.jpg" width="400" height="250" /></th>-->
+              
+            </tr>
+          </table>
+          
+          
+                  <h2><font color="yellow">SOFTWARE REQUIRED:</font></h2>
+                  <p><font color="white"><a href="https://virtuallabs.vit.ac.in/">OrCAD PSpice/MATLAB-SIMULINK</font></p>
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  <div id="container"><div id="a"><p><font color="white">Circuit analysis defines as to calculate the branch current and nodal voltages of given. There are many methods for calculating these values. Using resistance reduction method with ohms law, the severity of the calculation will increase as number of loops and nodes increases in the given circuit. Mesh current and Nodal voltage analysis are two methods which uses the kirchoff's voltage and current law for calculting the branch currents and node voltages.</font></p></div>
+                  <h3><font color="yellow">MESH CURRENT ANALYSIS:</font></h3>
+                  <div id="container"><div id="b"><p><font color="white">Mesh current analysis is also called as Loop current analysis. This Method uses the kirchoff's voltage law to calculate the unknown currents in the branch by framing minimum loops and minimum equations.</font></p></div></div>
+                  <h3><font color="yellow">Solution Using Matrix Method:</font></h3>
+                  
+                  <table width="51%" border="0" align="center">
+                  <tr>
+                  <th width="50%" height="96" scope="col"><img src="images/Eg1.png" width="450" height="250" /></th>
+                  </tr>
+                  </table>
+                  <table width="100%" height="200" border="0">
+                  <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>
+                  <p><font color="white"> # Find out number of loops in the circuit that covers all elements in the circuit atleast once.</font></p>
+                  <p><font color="white"> # Consider the clockwise flow of current direction on each loop and mark the unknown currents I<sub>1</sub>, I<sub>2</sub>, I<sub>3</sub> and so on.</font></p>
+                  <p><font color="white"> # Frame the matrix.</font></p>
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  [R][I] = [V] </font></p>
+                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/V=IR.jpg" width="220" height="80" />
+                  
+                  <p><font color="white"> # The diagonal matrices R<sub>11</sub>, R<sub>22</sub> and R<sub>33</sub> defines the sum of resistances in that respective loop.</font></p>
+                  <p><font color="white"> # The half diagonal matrices R<sub>12</sub>, R<sub>21</sub> and R<sub>13</sub>, R<sub>31</sub>, R<sub>23</sub> and R<sub>32</sub> defines the resistance appears in between the respective loops.</font></p>
+                  <p><font color="white"> # The voltage matrix V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub> defines the sum of voltages in the respective loop.(+ and - sign will come according to flow of current directions).</font></p>
+                  <p><font color="white"> # The Current Matrix I<sub>1</sub>, I<sub>2</sub>, I<sub>3</sub> defines the unknown values of loop currents.</font></p></table>
+                  
+                  <p><font color="yellow">Other Web Links: <a href="http://www.electronics-tutorials.ws/dccircuits/dcp_5.html">  Link1</a>,<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/mesh-current-method/">  Link2</font></a>
+                  
+                  <h3><font color="yellow">NODAL VOLTAGE ANALYSIS:</font></h3>
+                  <p><font color="white">Nodal Voltage analysis method uses the kirchoff's current law to calculate the unknown voltages at the nodes by framing minimum node equations.</font></p>
+                  
+                  
+                  <h3><font color="yellow">Solution Using Matrix Method:</font></h3>
+                  
+                  <table width="51%" border="0" align="center">
+                  <tr>
+                  <th width="50%" height="96" scope="col"><img src="images/Eg2.jpg" width="400" height="250" /></th>
+                  </tr>
+                  </table>
+                  <table width="100%" height="200" border="0">
+                  <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>
+                  <p><font color="white"> # Find out number of nodes in the circuit that covers all elements in the circuit atleast once.</font></p>
+                  <p><font color="white"> # Set refernce node among all and that should be common to remaining other node. Mark the unknown Node Voltages V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub> and so on.</font></p>
+                  <p><font color="white"> # Frame the matrix.</font></p>
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  [G][V] = [I] </font></p>
+                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/I=VG.jpg" width="220" height="80" />
+                  
+                  <p><font color="white"> # The diagonal matrices G<sub>11</sub>, G<sub>22</sub> and G<sub>33</sub> defines the sum of conductances connected at that respective node(i.e., 1/R<sub>1</sub>+1/R<sub>2</sub>+1/R<sub>3</sub>+...)</font></p>
+                  <p><font color="white"> # The half diagonal matrices G<sub>12</sub>, G<sub>21</sub> and G<sub>13</sub>, G<sub>31</sub>, R<sub>23</sub> and G<sub>32</sub> defines the conductances connected directly between the respective nodes.</font></p>
+                  <p><font color="white"> # The voltage matrix V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub> defines the unknown node voltages in the respective node.</font></p>
+                  <p><font color="white"> # The Current Matrix I<sub>1</sub>, I<sub>2</sub>, I<sub>3</sub> defines the source currents flow towards the node or coming out from from the node.</font></p></table>
+                  
+                  
+                  <p><font color="yellow">Other Web Links: <a href="http://www.electronics-tutorials.ws/dccircuits/dcp_6.html">  Link-1</a>,<a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/node-voltage-method/	">  Link-2</font></a>
+                  <h2><font color="yellow">PROCEDURE:</font></h2>
+                  <p><font color="white">1. In the given circuit, Convert all the current sources into the voltage sources if possible.</font></p>
+<p><font color="white">2. Find out the number of closed loops.</font></p>
+<p><font color="white">3. Consider the clockwise current flow direction in all the loops.</font></p>
+<p><font color="white">4. Frame current equations on each loop using KVL and solve it.</font></p>
+
+                                    
+			<h2><font color="yellow">MANUAL CALCULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL1(this);" />
+            <img id="Image1" src="#" alt="Screenshot1" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (ee) {
+                $('#Image1')
+                    .attr('src', ee.target.result)
+                    .width(auto)
+                    .height(auto);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+       		
+            
+            <div id="noprint" ><h2><font color="yellow">SIMULATION VIDEO:</font></h2>
+                 <p><center><font color="white">Please gothrough the video and Simulate in ORCAD PSpice Software... </font></center></p>
+                 <center><iframe width="650" height="450" src="https://www.youtube.com/embed/u0s464miUY0">
+                </iframe></center></div>
+            
+            <h2><font color="yellow">SIMULATION DIAGRAM:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+   
+                 <h2><font color="yellow">Inference:</font></h2>
+                 <h3><font color="yellow">Table:</font></h3>
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>Manual Calculation</th>
+                 <th>Program Output</th>
+                 </tr>
+                 <tr>
+                 <th>I<sub>1</sub> (Amps)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>I<sub>2</sub> (Amps)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 <tr>
+                 <th>I<sub>3</sub> (Amps</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 </table>
+                 </br>
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>Manual Calculation</th>
+                 <th>Program Output</th>
+                 </tr>
+                 <tr>
+                 <th>V<sub>1</sub> (Volts)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>V<sub>2</sub> (Volts)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 <tr>
+                 <th>V<sub>3</sub> (Volts)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 </table></br>
+                 
+                 
+                 <h2><font color="yellow">Result:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+       
+
+
+
+                                    
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </table>
+        
+    
+
+</body>
+
+</html>
+

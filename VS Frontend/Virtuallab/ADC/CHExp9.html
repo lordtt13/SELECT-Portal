@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:visited {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><h1 color: white>ANALOG AND DIGITAL CIRCUITS LAB</h1></th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="ADCLab.html"><img src="../../images/Home.png" width="20" height="20" /></a></td>
+        
+        <td width="39" align="center"><a href="CHExp8.html"><img src="../../images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="CHExp10.html"><img src="../../images/Right.png" width="20" height="20" /></td>
+        
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="../../images/Contact.png" width="20" height="20" /></td>
+      </tr>
+</table>
+
+
+<table width="100%" height="408" border="0">
+
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              <tr>
+               
+               <td><h2><font color="yellow">EXP:CH/9</font></h2></td>
+               <td>
+                  <h1><center><font color="yellow"><strong>Design of Counter</strong></font></center></h1></td>
+                  <td><font color="yellow"><p id="datetime"></p></font></td>
+                  <td>&nbsp;&nbsp;</td></tr>
+				  
+				  <script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">To verify the operation of 4bit binary up/down counter</font></p>
+                  <table width="51%" border="0" align="center">
+            <tr>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['w91.jpg','w92.jpg','w93.jpg'];
+                 $('<img class="fade-in" max.width="450" max.height="300" src="../../images/ADC/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+                </script></th>
+              
+             
+			  <!-- <img src="images/ec1.jpg" width="400" height="250" /></th>-->
+              
+            </tr>
+          </table>
+          
+          
+                  <h2><font color="yellow">SOFTWARE REQUIRED: <bold><input type="text" name="firstname"></bold></font></h2>
+                  
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  <textarea rows="10" cols="100%">Text to Write</textarea>
+                  
+                  
+                  <h2><font color="yellow">Formulae:</font></h2>
+                  <textarea rows="10" cols="100%">Formulae if any...</textarea>
+                  
+                  <h2><font color="yellow">PROCEDURE:</font></h2>
+                  <textarea rows="10" cols="100%">Procedure for Software</textarea>
+                  
+                  
+                  <p><font color="yellow">Other Web Links: <a href="https://www.electronics-tutorials.ws/counter/count_4.html">  Link-1</a>,<a href="https://www.electronics-tutorials.ws/counter/count_3.html"/">  Link-2</font></a>
+                  
+                                    
+			<h2><font color="yellow">MANUAL CALCULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL1(this);" />
+            <img id="Image1" src="#" alt="Screenshot1" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (ee) {
+                $('#Image1')
+                    .attr('src', ee.target.result)
+                    .width(auto)
+                    .height(auto);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+       		
+            
+                        
+            <h2><font color="yellow">SIMULATION DIAGRAM:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+   
+                 
+                 <h2><font color="yellow">Inference:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+				 
+			       
+
+</body>
+
+</html>
+

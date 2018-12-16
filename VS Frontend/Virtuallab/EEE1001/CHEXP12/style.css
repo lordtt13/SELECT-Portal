@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+body { background-color: powderblue;}
+title{color: white; text-align: center; font-style: normal; font-size:12px }
+h1 {color: #FFF; text-align: center;}
+h2 { color: #FFF; text-align: left;}
+h3 { color: #FFF; text-align: left; font-style:italic}
+h4 { color: white; text-align: left;}
+p { font-family: Georgia, "Times New Roman", Times, serif;}

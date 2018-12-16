@@ -21,7 +21,7 @@ mongoose.connect("mongodb://localhost/SELECT");
 var User = require("./models/user");
 
 app.use(require("express-session")({
-    secret: "SDC sucks",
+    secret: "Anbarasan sucks",
     resave: false,
     saveUninitialized: false
 }));
@@ -41,42 +41,15 @@ app.use(function(req,res,next){
 });
 
 //Routes
-var faculty=require('./routes/faculty');
-var facultyLogin  =require('./routes/facultyLogin');
-
-
-
-app.use('/faculty',faculty);
-app.use('/fac_login',facultyLogin);
-
-
-app.get('/', function (req, res){
-    res.render("landing.ejs");
-});
-
-app.get('/students', function (req, res){
-    res.render("student.ejs");
-});
-
-app.get('/staff', function (req, res){
-    res.render("staff.ejs");
-});
-
-app.get('/administration',function(req,res){
-    res.render("administration.ejs");
-});
-
-
-
-
-//TODO: We can ask them to enter their email id check it with already existing database and then generate a random password and send it to them
+var studentLogin  = require('./routes/studentLogin');
+app.use('/stud_login',studentLogin);
 
 app.get("/logout", function(req, res){
     req.logout();
-    res.redirect("/");
+    res.redirect("10.50.215.115:63342/");
 });
 
 
-app.listen(63342,process.env.IP,function(){
+app.listen(63341,process.env.IP,function(){
     console.log("The Server has Started");
 });

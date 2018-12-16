@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:visited {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><h1 color: white>SEMICONDUCTOR DEVICES AND CIRCUITS LAB</h1></th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="SDCLab.html"><img src="../../images/Home.png" width="20" height="20" /></a></td>
+        
+        <td width="39" align="center"><a href="Exp6.html"><img src="../../images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="Exp8.html"><img src="../../images/Right.png" width="20" height="20" /></td>
+        
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="../../images/Contact.png" width="20" height="20" /></td>
+        
+      </tr>
+</table>
+
+
+<table width="100%" height="408" border="0">
+
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              <tr>
+               
+               <td><h2><font color="yellow">EXP:7</font></h2></td>
+               <td>
+                  <h1><center><font color="yellow"><strong>Design the Biasing Circuits </strong></font></center></h1></td>
+                  <td><font color="yellow"><p id="datetime"></p></font></td>
+                  <td>&nbsp;&nbsp;</td></tr>
+				  
+				  <script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">To design the transistor biasing circuits</font></p>
+                  <table width="51%" border="0" align="center">
+            <tr>
+			<h3><font color="yellow">CIRCUIT DIAGRAM</font></h3>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['EXP71.jpg','EXP72.jpg','EXP73.jpg','EXP74.jpg','EXP75.jpg' ];
+                 $('<img class="fade-in" max.width="450" max.height="300" src="../../images/SDC/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+                </script></th>
+              
+             
+			  <!-- <img src="images/ec1.jpg" width="400" height="250" /></th>-->
+              
+            </tr>
+          </table>
+          
+          
+                  <h2><font color="yellow">SOFTWARE REQUIRED:</font></h2>
+                  <p><font color="white">ORCAD PSpice/MultiSim/MATLAB-Simulink</font></p>
+                      
+			  
+<p><font color="yellow">Simulation settings : </font></p>
+<p><font color="white">Analysis Type - Time Domain,</font></p>
+                       <p><font color="white">Run to time:5ms, </font></p>
+<p><font color="white">Output Reading       : Bias Point</font></p>
+
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  <div id="container"><div id="a"><p><font color="white">Emitter biased circuit generates its own DC bias voltage for the emitter which has a considerable effect on the base current. Any circuit which does generate such bias voltage without actually directly depending on an explicit power supply is a 'self bias'.It has already been discussed that for faithful amplification, a transistor amplifier must satisfy three
+basic conditions, namely : (i) proper zero signal collector current, (ii) proper base-emitter voltage at
+any instant and (iii) proper collector-emitter voltage at any instant. It is the fulfilment of these conditions
+which is known as transistor biasing.</font></p></div>
+                  <h3><font color="yellow">FIXED BIAS:</font></h3>
+                  <div id="container"><div id="b"><p><font color="white">The proper flow of zero signal collector current and the maintenance of proper collector-emitter
+voltage during the passage of signal is known as transistor biasing.
+The basic purpose of transistor biasing is to keep the base-emitter junction properly forward
+biased and collector-base junction properly reverse biased during the application of signal. This can
+be achieved with a bias battery or associating a circuit with a transistor. The latter method is more
+efficient and is frequently employed. The circuit which provides transistor biasing is known as
+biasing circuit. It may be noted that transistor biasing is very essential for the proper operation of
+transistor in any circuit.</font></p></div></div>
+                  <h3><font color="yellow">Formulae:</font></h3>
+                  
+                  <table width="51%" border="0" align="center">
+                  
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  VCC = (RB)(IB) + VBE</font></p>
+				  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  IC = βIB</font></p>
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  (RC)(IC) +VCE = VCC</font></p>
+				  
+                  
+                  
+                  <p><font color="yellow">Other Web Links: <a href="http://www.electronics-tutorials.ws/amplifier/transistor-biasing.html">  Link1</a></font></a>
+                  
+                  <h3><font color="yellow">SELF BIAS:</font></h3>
+				  
+                  <p><font color="white">A better  method of biasing is obtained  by inserting the bias resistor directly between the base and collector. By tying the collector to the base in this manner, feedback voltage can be fed from the collector to the base to develop forward bias. This arrangement is called SELF-BIAS. Now, if an increase of temperature causes an increase in collector current, the collector voltage (VC) will fall because of the increase of voltage produced across the load resistor (RL). This drop in VC will be fed back to the base and will result in a decrease in the base current. The decrease in base current will oppose the original increase in collector current and tend to stabilize it. The exact opposite effect is produced when the collector current decreases.This is the most widely used biasing scheme ingeneral electronics. For a single stage amplifier thiscircuit offers the best resilience against changes intemperature and device characteristics.This bias circuit gives the best stability againstvariations in Vc and Ic over a very widetemperature range.</font></p>
+                  
+                  
+                  <h3><font color="yellow">Formulae:</font></h3>
+                  
+                  
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  VCC = (RB)(IB) + VBE</font></p>
+				  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  IC = βIB</font></p>
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  (RC)(IC) +VCE = VCC</font></p>
+                  
+                  
+                  
+                  
+                  <p><font color="yellow">Other Web Links: <a href="http://www.electronics-tutorials.ws/amplifier/transistor-biasing.html">  Link-1</a> 
+				  <h3><font color="yellow">VOLTAGE DIVIDER BIAS:</font></h3>
+				  
+                  <p><font color="white">Voltage divider bias is the most popular and used way to bias a transistor. It uses a few resistors to make sure that voltage is divided and distributed into the transistor at correct levels.This voltage divider biasing configuration is the most widely used transistor biasing method, as the emitter diode of the transistor is forward biased by the voltage dropped across resistor RB2. Also, voltage divider network biasing makes the transistor circuit independent of changes in beta as the voltages at the transistors base, emitter, and collector are dependant on external circuit values.To calculate the voltage developed across resistor RB2 and therefore the voltage applied to the base terminal we simply use the voltage divider formula for resistors in series.
+Generally the voltage drop across resistor RB2 is much less than for resistor RB1. Then clearly the transistors base voltage VB with respect to ground, will be equal to the voltage across RB2.The current flowing through resistor RB2 is generally set at 10 times the value of the required base current IB so that it has no effect on the voltage divider current or changes in Beta.</font></p>
+                  
+                  
+                  <h3><font color="yellow">Formulae:</font></h3>
+                  
+                  
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  VCC = (RB)(IB) + VBE</font></p>
+				  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  IC = βIB</font></p>
+                  <p><font color="white"> &nbsp;&nbsp;&nbsp;&nbsp;  (RC)(IC) +VCE = VCC</font></p>
+                  
+                  
+                  
+                  
+                  <p><font color="yellow">Other Web Links: <a href="http://www.electronics-tutorials.ws/amplifier/transistor-biasing.html">  Link-1</a> 
+                  <h2><font color="yellow">PROCEDURE:</font></h2>
+                  <p><font color="white">1. Create a New Blank Project .</font></p>
+<p><font color="white">2. Draw the single stage common emitter amplifier schematic diagram similar to the one shown in the figure. </font></p>
+<p><font color="white">3. Enter the model values listed above.</font></p>
+<p><font color="white">4. Run the simulation .</font></p>
+<p><font color="white">5. The voltages and currents will be displayed on the schematic. On the following page are the hand calculations and the PSpice Simulation output.  </font></p>
+
+                                    
+			<h2><font color="yellow">MANUAL CALCULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL1(this);" />
+            <img id="Image1" src="#" alt="Screenshot1" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (ee) {
+                $('#Image1')
+                    .attr('src', ee.target.result)
+                    .width(auto)
+                    .height(auto);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+       		
+            
+           
+            
+            <h2><font color="yellow">SIMULATION DIAGRAM:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+   
+                 <h2><font color="yellow">Inference:</font></h2>
+                 <h3><font color="yellow">Table:</font></h3>
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>Manual Calculation</th>
+                 <th>Program Output</th>
+                 </tr>
+                 <tr>
+                 <th>I<sub>B</sub> (Amps)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>I<sub>C</sub> (Amps)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 <tr>
+                 <th>V<sub>CE</sub> (Volts)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+				 <tr>
+                 <th>β</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 </table>
+                 </br>
+                 
+                 
+                 
+                 
+                 <h2><font color="yellow">Result:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+       
+
+
+
+                                    
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </table>
+        
+    
+
+</body>
+
+</html>
+

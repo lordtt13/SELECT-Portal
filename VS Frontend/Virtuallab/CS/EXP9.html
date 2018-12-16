@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><h1 color: white>CONTROL SYSTEMS LAB</h1></th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="CSLab.html"><img src="../../images/Home.png" width="20" height="20" /></a></td>
+        
+        <td width="39" align="center"><a href="EXP8.html"><img src="../../images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="EXP10.html"><img src="../../images/Right.png" width="20" height="20" /></td>
+        
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="../../images/Contact.png" width="20" height="20" /></td>
+      </tr>
+</table>
+
+<table width="100%" height="408" border="0">
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              <tr>
+              
+               <td><h2><font color="yellow">Exp:9</font></h2></td>
+               <td>
+                  <h1><center><font color="yellow"><strong>Stability Determination of a System by Root – Locus Plot</strong></font></center></h1></td>
+                  <td><font color="yellow"><p id="datetime"></p></font></td>
+                  <td>&nbsp;&nbsp;</td></tr>
+				  
+				  <script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>
+                  
+                  
+                  
+                  <h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">To analyze the stability of the system given in transfer function model by Root Locus using M-file Editor in MATLAB.</font></p>
+                <table width="51%" border="0" align="center">
+            <tr>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['w91.png', 'w92.png','w93.png','w94.png','w95.png','w96.png','w97.png'];
+                 $('<img class="fade-in" max.width="450" max.height="300" src="../../images/CS/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+                </script></th>
+				  <!-- <img src="images/ec1.jpg" width="400" height="250" /></th>-->
+              
+            </tr>
+          </table>
+				 
+                            <h2><font color="yellow">SOFTWARE/SIMULATION PLATFORM:</font></h2>
+                  <p><font color="white">MATLAB</font></p>
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  <h3><font color="yellow">ROOT LOCUS ANALYSIS</font></h3>
+				  <div id="container"><div id="a"><p><font color="white"><font></p>In control theory and stability theory, root locus analysis is a graphical method for examining how the roots of a system change with variation of a certain system parameter, commonly a gain within a feedback system. This is a technique used as a stability criterion in the field of classical control theory developed by Walter R. Evans which can determine stability of the system. The root locus plots the poles of the closed loop transfer function in the complex s-plane as a function of a gain parameter.</div>
+                  <div id="container"><div id="a"><p><font color="white"> The root locus technique is a powerful tool for adjusting the location of closed loop poles to achieve the desired system performance by varying one or more system parameters. The path taken by the roots of the characteristics equation when open loop gain K is varied from 0 to ∞ is called root locus.</font></p></div>
+                  <div id="container"><div id="a"><p><font color="white">Root locus technique is a graphical method for sketching the locus of roots in the s – plane as a parameter is varied. <font></p></div>
+                  
+				 
+
+                  
+                 <p><font color="yellow">Other Web Links: <a href="https://en.wikipedia.org/wiki/Root_locus">  Link-1</a>,<a href="https://www.tutorialspoint.com/control_systems/control_systems_construction_root_locus.htm">  Link-2</font></a>
+	  
+                  <h2><font color="yellow">PROCEDURE: </font></h2>
+                  <p><font color="white">1. Enter the command window of the MATLAB.</font></p>
+<p><font color="white">2. Create a new M – file by selecting File – New – M – File.</font></p>				  
+<p><font color="white">3. Type and save the program.</font></p>
+<p><font color="white">4. Execute the program by either pressing F5 or Debug – Run. </font></p>
+<p><font color="white">5. View the results. </font></p>
+<p><font color="white">6. Analysis the stability of the system.</font></p>
+
+
+
+
+
+			
+                   
+                
+       
+       
+       		<h2><font color="yellow">SIMULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <h3><font color="yellow">m-Code:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            <h3><font color="yellow">Output:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+        	 
+                 
+                 <h2><font color="yellow">Result:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+       
+
+
+
+                                    
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </table>
+        
+    
+
+</body>
+
+</html>
+

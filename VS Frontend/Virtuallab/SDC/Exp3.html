@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:visited {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><h1 color: white>SEMICONDUCTOR DEVICES AND CIRCUITS LAB</h1></th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="file:///E|/Vlab/Virtual Edu 29-11-2017/images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="SDCLab.html"><img src="../../images/Home.png" width="20" height="20" /></a></td>
+        
+        <td width="39" align="center"><a href="Exp2.html"><img src="../../images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="Exp4.html"><img src="../../images/Right.png" width="20" height="20" /></td>
+        
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="../../images/Contact.png" width="20" height="20" /></td>
+        
+      </tr>
+</table>
+
+
+<table width="100%" height="408" border="0">
+
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              <tr>
+               
+               <td><h2><font color="yellow">EXP:3</font></h2></td>
+               <td>
+                  <h1><center><font color="yellow"><strong>Perform the Characteristics of BJT </strong></font></center></h1></td>
+                  <td><font color="yellow"><p id="datetime"></p></font></td>
+                  <td>&nbsp;&nbsp;</td></tr>
+				  
+				  <script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">To obtain the input and output characteristics of a bipolar junction transistor and find the h parameters for the same.</font></p>
+                  <table width="51%" border="0" align="center">
+            <tr>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['EXP31.jpg', 'EXP32.jpg'];
+                 $('<img class="fade-in" max.width="450" max.height="300" src="../../images/SDC/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+              </script></th>
+              
+             
+			  <!-- <img src="images/ec1.jpg" width="400" height="250" /></th>-->
+              
+            </tr>
+          </table>
+          
+          
+                  <h2><font color="yellow">SOFTWARE REQUIRED:</font></h2>
+                  <p><font color="white">OrCAD PSpice/MATLAB-SIMULINK</font></p>
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  <div id="container"><div id="a"><p style="text-align:justify"><font color="white">Transistor is a three layer, three terminal current operated device where the current flowing through two terminals can be controlled by the signal on the third terminal. For the proper working of the transistor the input junction should be forward biased and the output junction should be reverse biased.</font></p></div>
+                  <center><img src="../../images/SDC/ckt31.jpg"/></center>
+				 <div id="container"><div id="a"><p style="text-align:justify"><font color="white">The three regions are emitter, base and collector. The three regions does not have the same thickness, and are not doped to the same level. This is necessary for the transistor to be used as an active device. The emitter is heavily doped and it has a considerable thickness. The base is lightly doped and it is very thin. The collector is moderately doped but it is thicker than emitter. In NPN transistor, when the emitter-base junction is forward biased the electrons diffuse into the base region. Simultaneously a small number of holes from the base diffuse into the emitter region. Some of the electrons recombine with this hole in the base region producing a base current (IB). As the collector base junction is reverse biased, minority carriers namely electrons in the base region and holes in the collector region can drift across the reverse biased collector-base junction, thus constituting the collector current (Ic).</font></p></div>
+				<table width="100%" height="" border="1" bgcolor="#3e5086">
+                 <tr>
+                 <th>  </th>
+                 <th><h3><font color="white"><center>CB CONFIGURATION</center></font></h3></th>
+                 <th><h3><font color="white"><center>CE CONFIGURATION</center></font></h3></th>
+                 </tr>
+                 <tr>
+                 <th><font color="white">INPUT CHARACTERISTICS</font></th>
+                 <td><p style="text-align:justify"><font color="white"> The collector-base voltage is kept constant and the emitter-base voltage is varied. The values of the emitter-base voltage and the corresponding emitter current are tabulated for a constant collector-base voltage and the graph is plotted. From the graph find the h-parameters h<sub>fb</sub> and h<sub>ib</sub>.</font></p></td>
+                 <td><p style="text-align:justify"><font color="white">The input characteristic is nothing but emitter diode junction characteristics. The transistor input characteristic is essentially that of a forward biased base-emitter junction, with some dependence upon the junction CE. With V<sub>CE</sub> is set to some volts, the effective width of the base will decrease. This effect causes a decrease in the base current I<sub>B</sub>. Hence to get the same value of I<sub>B</sub> as before, V<sub>BE</sub> should be increased. Therefore the curve shifts to right.</font></p></td>
+                 </tr>
+                 <tr>
+                 <th><font color="white">OUTPUT CHARACTERISTICS</font></th>
+                 <td><p style="text-align:justify"><font color="white">To determine the output characteristics, the emitter current is kept constant and the collector base voltage is varied. The values of collector-base voltage and the corresponding collector current are tabulated for a constant emitter current and the graph is plotted. From the graph find the h parameters h<sub>ob</sub> and h<sub>rb</sub>.</font></p></td>
+                 <td><p style="text-align:justify"><font color="white">To determine the output characteristics, the base current I<sub>B</sub> is kept constant. The output characteristics have three regions namely, saturation region, cut-off region, and active region. In saturation region both the junctions are forward biased and a increase in the base current I<sub>B</sub> does not cause a corresponding large change in I<sub>c</sub>. The Cut-off region both junctions are reverse bias. In the active region, emitter-base junction is forward biased and the collector-base junction is reverse biased. For the transistor to be used as linear amplifier, it should be operated in the active region.</font></p></td>
+                 </tr>
+                 </table>
+                 
+		          <p><font color="yellow">Other Web Links: <a href="https://www.electronicshub.org/different-configurations-of-transistors/">  Link-1</a></font>
+                  <h2><font color="yellow">PROCEDURE:</font></h2>
+                  <p><font color="white">1. In the given circuit, Convert all the current sources into the voltage sources if possible.</font></p>
+<p><font color="white">2. Find out the number of closed loops.</font></p>
+<p><font color="white">3. Consider the clockwise current flow direction in all the loops.</font></p>
+<p><font color="white">4. Frame current equations on each loop using KVL and solve it.</font></p>
+
+                  <h2><font color="yellow">FORMULAE:</font></h2>                  
+				<table width="100%" height="" border="1" bgcolor="#3e5086">
+                 <tr>
+                 <th><h3><font color="white"><center>CB CONFIGURATION</center></font></h3></th>
+                 <th><h3><font color="white"><center>CE CONFIGURATION</center></font></h3></th>
+                 </tr>
+                 <tr>
+                 <td><center><img src="../../images/SDC/formula31.jpg"/></center></td>
+                 <td><center><img src="../../images/SDC/formula32.jpg"/></center></td>
+                 </tr>
+                 </table>  
+			<h2><font color="yellow">MANUAL CALCULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL1(this);" />
+            <img id="Image1" src="#" alt="Screenshot1" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (ee) {
+                $('#Image1')
+                    .attr('src', ee.target.result)
+                    .width(auto)
+                    .height(auto);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+       		
+            
+            <!--<div id="noprint" ><h2><font color="yellow">SIMULATION VIDEO:</font></h2>
+                 <p><center><font color="white">Please gothrough the video and Simulate in ORCAD PSpice Software... </font></center></p>
+                 <center><iframe width="650" height="450" src="https://www.youtube.com/embed/u0s464miUY0">
+                </iframe></center></div>-->
+            
+            <h2><font color="yellow">SIMULATION DIAGRAM:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+   
+                 <h2><font color="yellow">Inference:</font></h2>
+                 <h3><font color="yellow">Table:</font></h3>
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>Manual Calculation</th>
+                 <th>Program Output</th>
+                 </tr>
+                 <tr>
+                 <th>I<sub>1</sub> (Amps)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>I<sub>2</sub> (Amps)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 <tr>
+                 <th>I<sub>3</sub> (Amps</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 </table>
+                 </br>
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>Manual Calculation</th>
+                 <th>Program Output</th>
+                 </tr>
+                 <tr>
+                 <th>V<sub>1</sub> (Volts)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>V<sub>2</sub> (Volts)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 <tr>
+                 <th>V<sub>3</sub> (Volts)</th>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 </table></br>
+                 <h2><font color="yellow">MODEL GRAPHS:</font></h2>
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th>  </th>
+                 <th>CB CONFIGURATION</th>
+                 <th>CE CONFIGURATION</th>
+                 </tr>
+                 <tr>
+                 <th>INPUT CHARACTERISTICS</th>
+                 <td><img src="../../images/SDC/graph31.jpg" width="400" height="300"/></td>
+                 <td><img src="../../images/SDC/graph32.jpg" width="400" height="300"/></td>
+                 </tr>
+                 <tr>
+                 <th>OUTPUT CHARACTERISTICS</th>
+                 <td><img src="../../images/SDC/graph33.jpg" width="400" height="300"/></td>
+                 <td><img src="../../images/SDC/graph34.jpg" width="400" height="300"/></td>
+                 </tr>
+                 </table></br>
+                 
+                 
+                 <h2><font color="yellow">Graphs:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL3(this);" />
+            <img id="Image3" src="#" alt="Screenshot3" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL3(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image3')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+                 
+                 
+                 
+                 
+				 <h2><font color="yellow">Result:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+       
+
+
+
+                                    
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </table>
+        
+    
+
+</body>
+
+</html>
+

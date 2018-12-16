@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Virtual Lab</title>
+<link href="../../../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:visited {
+	text-decoration: none;
+	color: #3e5086;
+}
+a:hover {
+	text-decoration: none;
+	color: Red;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+
+}
+@media print{
+   #noprint{
+       display:none;
+   }
+}
+</style>
+</head>
+
+<body>
+<table width="100%" height="92" border="0">
+  <tr>
+    <th width="15%" height="152" scope="col" bgcolor="#3e5086"><img src="images/VITlogo.png" width="150" height="150" /></th>
+    <th width="70%" scope="col" bgcolor="#3e5086"><font color = "white" size="6">BASIC ELECTRICAL AND ELECTRONICS LAB</th>
+    <th width="15" height="152" scope="col" bgcolor="#3e5086"><img src="images/SELECTlogo.png" width="170" height="170" /></th>
+  </tr>
+</table>
+
+<table width="100%" height="" border="0">
+<tr bgcolor="#d9d9dd">
+        <td width="39" align="center"><a href="../Electriccircuitslab.html"><img src="images/Home.png" width="20" height="20" /></a></td> 	
+        <td width="39" align="center"><a href="../Exp4/Maxpower.html"><img src="images/Left.png" width="20" height="20" /></a></td>
+        <td width="550" align="center"></td>
+
+        <td width="37" align="center"><a href="../Exp6/Resonance.html"><img src="images/Right.png" width="20" height="20" /></td>
+        <td width="37" align="center"><a href="../../../Contactus.html"><img src="images/Contact.png" width="20" height="20" /></td>
+        
+        
+      </tr>
+</table>
+
+<table width="100%" height="408" border="0">
+     <td width="100%" bgcolor="#3e5086" valign="top">
+            <table width="100%" height="200" border="0">
+              <tr>
+               
+               <td><h2><font color="yellow">Exp:5</font></h2></td>
+               <td>
+                  <h1><center><font color="yellow"><strong>ANALYSIS OF FIRST ORDER DC TRANSIENTS </strong></font></center></h1></td>
+                  <td><font color="yellow"><p id="datetime"></p></font></td>
+                  <td>&nbsp;&nbsp;</td></tr>
+				  
+				  <script>
+                      var dt = new Date();
+                      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +", "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+                  </script>
+                  
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>
+                  
+                  <h2><font color="yellow">AIM:</font></h2>
+                  <p><font color="white">To study the transient analysis of RL or RC circuits for step input.</font></p>
+                  
+                  
+                  <table width="51%" border="0" align="center">
+            <tr>
+              <th width="50%" height="96" scope="col">
+              <div id="banner-load"></div>
+              <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+              <script>
+                 var images = ['ec1.jpg','ec2.jpg','ec3.jpg','ec4.jpg','ec5.jpg','ec11.jpg','ec12.jpg','ec13.jpg','ec14.jpg','ec15.jpg',];
+                 $('<img class="fade-in" max.width="400" max.height="250" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+                </script></th>
+                           
+            </tr>
+          </table>
+                  
+                  
+                  
+                  
+                            
+                  <h2><font color="yellow">SOFTWARE REQUIRED:</font></h2>
+                  <p><font color="white"><a href="https://virtuallabs.vit.ac.in/">OrCAD-PSpice/MATLAB-SIMULINK</font></p>
+                  <h2><font color="yellow">THEORY:</font></h2>
+                  
+                  <div id="container"><div id="a"><p><font color="white"> When a d.c. voltage or a small pulse is applied to a capacitor C and resistor R connected in series, there is a short period of time immediately after the voltage is connected, during which the current flowing in the circuit and voltages across C and R are changing.</font></p></div>
+                  <div id="container"><div id="a"><p><font color="white"> Similarly, when a d.c. voltage or a small pulse is connected to a circuit having inductance L connected in series with resistance R, there is a short period of time immediately after the voltage is connected, during which the current flowing in the circuit and the voltages across L and R are changing.</font></p></div>
+                  <div id="container"><div id="a"><p><font color="white"> Momentary or temporary changes in the circuit variables are called transients.</font></p></div>
+                  <div id="container"><div id="a"><p><font color="white"> The transient response is the fluctuation in current and voltage in a circuit (after the application of a step voltage or current) before it settles down to its steady state. This lab will focus on simulation of series RL (resistor-inductor), RC (resistor-capacitor), and RLC (resistor inductor-capacitor) circuits to demonstrate transient analysis.</font></p></div>
+                  
+                  
+                 <p><font color="yellow">Other Web Links: <a href="https://www.youtube.com/watch?v=KylJ2v1_c-o">  Link-1</a>,<a href="https://www.youtube.com/watch?v=B4TezoTORYA&t=20s">  Link-2</font></a>
+                  
+                  <h2><font color="yellow">PROCEDURE: </font></h2>
+                  <p><font color="white">1. Open new model file.</font></p>
+<p><font color="white">2. Drag and place the required electrical components to build the RL/RC circuit. </font></p>
+<p><font color="white">3. Simulate the circuits for the three cases (i) Under damped, (ii) Critically damped and (iii) Over damped with step input. </font></p>
+<p><font color="white">4. Observe the waveforms for the three cases of RL, RC and RLC circuits. </font></p>
+
+
+
+
+
+			<h2><font color="yellow">MANUAL CALCULATION:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <font color="white"><input type='file' onchange="readURL1(this);" />
+            <img id="Image1" src="#" alt="Screenshot1" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (ee) {
+                $('#Image1')
+                    .attr('src', ee.target.result)
+                    .width(auto)
+                    .height(auto);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+                   
+                <div id="noprint" ><h2><font color="yellow">SIMULATION VIDEO:</font></h2>
+                 <p><center><font color="white">Please gothrough the video and Simulate in ORCAD PSpice Software... </font></center></p>
+                 <center><iframe width="854" height="480" src="https://www.youtube.com/embed/SWQai2br0fw" frameborder="0" allowfullscreen></iframe></center></div>
+       
+       
+       		<h2><font color="yellow">SIMULATION DIAGRAM:</font></h2>
+            <h3><font color="yellow">Upload the Screenshot:</font></h3>
+            <h3><font color="yellow">Model of RL, RC and RLC with Step input:</font></h3>
+            <font color="white"><input type='file' onchange="readURL2(this);" />
+            <img id="Image2" src="#" alt="Screenshot2" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image2')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>
+       
+       
+       
+            
+       
+            <h3><font color="yellow">Simulation Results of RL Circuit:</font></h3>
+            <font color="white"><input type='file' onchange="readURL4(this);" />
+            <img id="Image4" src="#" alt="Screenshot4" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL4(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image4')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>      
+       
+       
+            <h3><font color="yellow">Simulation Results of RC Circuit:</font></h3>
+            <font color="white"><input type='file' onchange="readURL5(this);" />
+            <img id="Image5" src="#" alt="Screenshot5" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL5(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image5')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>       
+       
+            <h3><font color="yellow">Simulation Results of RLC Circuit:</font></h3>
+            <font color="white"><input type='file' onchange="readURL6(this);" />
+            <img id="Image6" src="#" alt="Screenshot6" /></font></br></br>
+            
+			
+			<script type="text/javascript"> 
+            function readURL6(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#Image6')
+                    .attr('src', e.target.result)
+                    .width(750)
+                    .height(600);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+       </script>      
+       
+       
+                 <h3><font color="yellow">Table:</font></h3>
+                
+                 
+                 <table width="40%" height="" border="1" bgcolor="white">
+                 <tr>
+                 <th width="10%"></th>
+                 <th width="10%">RL Circuit</th>
+                 <th width="10%">RC Circuit</th>
+                 <th width="10%">RLC Circuit</th>
+                 </tr>
+                 <tr>
+                 <th>I(t)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center> <input type="text" name="firstname"> </center></td>
+                 </tr>
+                 <tr>
+                 <th>V(t)</th>
+                 <td><center> <input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 <td><center><input type="text" name="firstname"></center></td>
+                 </tr>
+                 
+                 </table>
+                 </br>
+       
+       
+                 
+                 <h2><font color="yellow">Result:</font></h2>
+                 <textarea rows="4" cols="120">Text to Write</textarea>
+       
+
+
+
+                                    
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </table>
+        
+    
+
+</body>
+
+</html>
+
