@@ -1,14 +1,14 @@
 var eeeExpanded=false;
-    var eieExpanded=false;
-    var epeExpanded=false;
-    var caeExpanded=false;
+var eieExpanded=false;
+var epeExpanded=false;
+var caeExpanded=false;
 
 function electricalExpand(){
-        eeeExpanded=true;
-        $('#eeeCards').slideDown(900);
-        setTimeout(function(){
-            $('#deeerow .plus-icon').addClass('plus-icon-change');
-        },100);
+    eeeExpanded=true;
+    $('#eeeCards').slideDown(900);
+    setTimeout(function(){
+        $('#deeerow .plus-icon').addClass('plus-icon-change');
+    },100);
     if(eieExpanded)
         instrumentCollapse();
     if(epeExpanded)
@@ -17,37 +17,37 @@ function electricalExpand(){
         automationCollapse();
 }
 function instrumentExpand(){
-        eieExpanded=!eieExpanded;
-        $('#eieCards').slideDown(900);
-        setTimeout(function(){
-            $('#deierow .plus-icon').addClass('plus-icon-change');
-        },100);
+    eieExpanded=!eieExpanded;
+    $('#eieCards').slideDown(900);
+    setTimeout(function(){
+        $('#deierow .plus-icon').addClass('plus-icon-change');
+    },100);
     if(epeExpanded)
         powerelecCollapse();
     if(caeExpanded)
         automationCollapse();
-     if(eeeExpanded)
+    if(eeeExpanded)
         electricalCollapse();
 }
 function powerelecExpand(){
-        epeExpanded=true;
-        $('#epeCards').slideDown(900);
-        setTimeout(function(){
-            $('#deperow .plus-icon').addClass('plus-icon-change');
-        },100);
+    epeExpanded=true;
+    $('#epeCards').slideDown(900);
+    setTimeout(function(){
+        $('#deperow .plus-icon').addClass('plus-icon-change');
+    },100);
     if(eieExpanded)
         instrumentCollapse();
     if(caeExpanded)
         automationCollapse();
-     if(eeeExpanded)
+    if(eeeExpanded)
         electricalCollapse();
 }
 function automationExpand(){
-        caeExpanded=true;
-        $('#caeCards').slideDown(900);
-        setTimeout(function(){
-            $('#dcaerow .plus-icon').addClass('plus-icon-change');
-        },100);
+    caeExpanded=true;
+    $('#caeCards').slideDown(900);
+    setTimeout(function(){
+        $('#dcaerow .plus-icon').addClass('plus-icon-change');
+    },100);
     if(eieExpanded)
         instrumentCollapse();
     if(epeExpanded)
@@ -58,36 +58,36 @@ function automationExpand(){
 
 
 function electricalCollapse(){
-        eeeExpanded=false;
-        $('#eeeCards').slideUp(200);
-        setTimeout(function(){
-            $('#deeerow .plus-icon').removeClass('plus-icon-change');
-        },100);
+    eeeExpanded=false;
+    $('#eeeCards').slideUp(200);
+    setTimeout(function(){
+        $('#deeerow .plus-icon').removeClass('plus-icon-change');
+    },100);
 }
 function instrumentCollapse(){
-        eieExpanded=false;
-        $('#eieCards').slideUp(200);
-        setTimeout(function(){
-            $('#deierow .plus-icon').removeClass('plus-icon-change');
-        },100);
+    eieExpanded=false;
+    $('#eieCards').slideUp(200);
+    setTimeout(function(){
+        $('#deierow .plus-icon').removeClass('plus-icon-change');
+    },100);
 }
 function powerelecCollapse(){
-        epeExpanded=false;
-        $('#epeCards').slideUp(200);
-        setTimeout(function(){
-            $('#deperow .plus-icon').removeClass('plus-icon-change');
-        },100);
+    epeExpanded=false;
+    $('#epeCards').slideUp(200);
+    setTimeout(function(){
+        $('#deperow .plus-icon').removeClass('plus-icon-change');
+    },100);
 }
 function automationCollapse(){
-        caeExpanded=false;
-        $('#caeCards').slideUp(200);
-        setTimeout(function(){
-            $('#dcaerow .plus-icon').removeClass('plus-icon-change');
-        },100);
+    caeExpanded=false;
+    $('#caeCards').slideUp(200);
+    setTimeout(function(){
+        $('#dcaerow .plus-icon').removeClass('plus-icon-change');
+    },100);
 }
 
 $(document).ready(function(){
-   
+
     $('.navbar-nav .active').removeClass('active');
     $('#nav-faculty').addClass('active');
     $('#deeerow').click(function(){
@@ -122,6 +122,6 @@ $(document).ready(function(){
             automationExpand();
         }
     });
-    
-  
-});
+
+
+});``

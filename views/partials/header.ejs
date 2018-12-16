@@ -35,25 +35,27 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li id='nav-home' class="active"><a href="/">Home</a></li>
-                    <li id='nav-admin'><a href="/administration">Administration</a></li><li class="divider"></li>
-                    <li id='nav-faculty'><a href="/faculty">Faculty</a></li><li class="divider"></li>
-                    <li id='nav-staff'><a href="/staff">Staff</a></li>
+                    <li id='nav-admin'><a href="/administration/">Administration</a></li><li class="divider"></li>
+                    <li id='nav-faculty'><a href="/faculty/">Faculty</a></li><li class="divider"></li>
+                    <li id='nav-staff'><a href="/staff/">Staff</a></li>
 
-                    <li id='nav-stud'><a href="/students">Students</a></li>
+                    <li id='nav-stud'><a href="/students/">Students</a></li>
                     <li id='nav-labs'><a href="">Laboratories</a></li>
-                    <li id='nav-res'><a href="">Research</a></li>
-                    <li id='nav-proj'><a href="">Projects</a></li>
-                    <li id='nav-publ'><a href="">Publications</a></li>
+                    <li id='nav-res'><a href="/research/">Research</a></li>
+                    <li id='nav-proj'><a href="/projects/">Projects</a></li>
+                    <li id='nav-publications'><a href="/publications/">Publications</a></li>
                     <li id='nav-lvideos'><a href="">Lecture Videos</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" >IQAC Portal
                             <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul  class="dropdown-menu">
                             <% if(!currentUser){%>
-                            <li><a href="/Fac_login/">Faculty Login</a></li>
-                            <%}else {%>
-                            <li><a href="/logout">Logout</a></li>
-                            <%}%>
+                                <li><a href="/fac_login/">Faculty Login</a></li>
+                            <%} else{%>
+                                <li class='dropdown-item'><a href="/dashboard/">Dashboard</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-item"><a href="/logout">Logout</a></li>
+                                <%}%>
                         </ul>
                     </li>
                 </ul>

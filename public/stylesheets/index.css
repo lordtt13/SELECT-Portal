@@ -68,40 +68,48 @@ body{
     justify-content: center;
 }
 
-@media screen and (min-width:1024px)
-{
-    #heading-acronym{
+@media screen and (min-width:1024px) {
+    #heading-acronym {
         display: none;
 
     }
-    .heading-row{
+
+    .heading-row {
         margin: 15px 0 0 0;
     }
-    #heading-full{
+
+    #heading-full {
         font-size: 2.7em;
-        display:inline;
+        display: inline;
 
     }
-    .logo #vitLogo{
+
+    .logo #vitLogo {
         width: 280px
     }
-    .logo #selectLogo{
-        width:110px;
-        height:110px;
+
+    .logo #selectLogo {
+        width: 110px;
+        height: 110px;
     }
 
-    #items1>li{
-        float:left;
+    #items1 > li {
+        float: left;
     }
-    .nav-icon{
-        display:none;
-    }
-    .navbar-selected{
+
+    .nav-icon {
         display: none;
     }
-    #dropdownArrow{
+
+    .navbar-selected {
         display: none;
     }
-    .cardsFlex{
-    justify-content: flex-start;
+
+    #dropdownArrow {
+        display: none;
+    }
+
+    .cardsFlex {
+        justify-content: flex-start;
+    }
 }
