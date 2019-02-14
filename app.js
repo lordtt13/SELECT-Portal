@@ -43,14 +43,12 @@ app.use(function(req,res,next){
 //Routes
 var faculty         =require('./routes/faculty');
 var facultyLogin    =require('./routes/facultyLogin');
-var dashboard       =require('./routes/dashboard');
 var publications    =require('./routes/publications');
 var projects        =require('./routes/projects');
 var research        =require('./routes/research')
 
 app.use('/faculty',faculty);
 app.use('/fac_login',facultyLogin);
-app.use('/dashboard',dashboard);
 app.use('/publications',publications);
 app.use('/research',research);
 app.use('/projects',projects);
@@ -83,6 +81,33 @@ app.get("/logout", function(req, res){
     res.redirect("/");
 });
 
+app.get("/fjsdalkfjfdsf",isLoggedIn,function(req,res){
+    res.render("changePassword.ejs",{query:req.query});
+
+});
+
+app.post("/fjsdalkfjfdsf",isLoggedIn,function(req,res){
+    if(req.body.newPassword==req.body.confirmPassword)
+    {
+        req.user.changePassword(req.body.oldPassword,req.body.newPassword,function(err){
+            console.log(err);
+            if(err)
+            {
+                res.redirect("/fjsdalkfjfdsf?error=401");
+            }
+            else{
+                res.redirect("./")
+            }
+        })
+    }
+    else{
+        res.redirect("/fjsdalkfjfdsf?error=402");
+    }
+});
+
+app.get("/dashboard",isLoggedIn,function(req,res){
+    res.render("dataCollection.ejs");
+});
 
 app.listen(63342,process.env.IP,function(){
     console.log("The Server has Started");

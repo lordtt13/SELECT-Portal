@@ -10,15 +10,15 @@ var teacher= mongoose.model("teacher");
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'anshuman.chhapolia2017@vitstudent.ac.in',
-        pass: 'ilijksms1999'
+
     }
 });
 
 var mailOptions = {
-    from: 'anshuman.chhapolia2017@vitstudent.ac.in',
-    to: 'anshuman.chhapolia2017@vitstudent.ac.in',
-    subject: 'Sending Email using Node.js',
+    from: "",
+    to: '',
+    subject: '',
+    body: ''
 };
 
 
@@ -71,6 +71,7 @@ function generatePassword(){
         length:6,
         numbers:true
     });
+    console.log(password);
     return password;
 }
 
